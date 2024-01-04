@@ -19,7 +19,7 @@ const NavBar = styled.nav`
   display: flex;
   background-color: white;
   justify-content: space-around; // 아이템들 간격 동일하게
-  border-top: 1px solid grey; // 상단 테두리 설정
+  border-top: 1px solid #d6d6d6; // 상단 테두리 설정
 `;
 
 const NavItem = styled.div`
@@ -27,7 +27,9 @@ const NavItem = styled.div`
   width: 20%;
   float: left;
   height: 60px;
-  line-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 `;
 
@@ -37,10 +39,10 @@ const IconWrapper = styled.div`
   justify-content: center;
   border-radius: 50%;
   background-color: #989cfc;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  bottom: 15px;
 `;
 
 const BottomNav = () => {
