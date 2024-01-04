@@ -1,8 +1,12 @@
 import React from "react";
-
+import PostList from "../components/PostList";
 const Homepage = () => {
   console.log("Homepage 컴포넌트가 렌더링됨.");
-  return <div>홈화면임</div>;
+  return (
+    <div>
+      <PostList />
+    </div>
+  );
 };
 
 export default Homepage;

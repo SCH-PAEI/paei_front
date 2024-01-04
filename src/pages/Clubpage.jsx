@@ -1,7 +1,12 @@
 import React from "react";
-
+import PostList from "../components/PostList";
 const Clubpage = () => {
-  return <div>그 대충 동아리같은거 모집하는 화면임ㄴ</div>;
+  console.log("clubpage 컴포넌트가 렌더링됨.");
+  return (
+    <div>
+      <PostList />
+    </div>
+  );
 };
 
 export default Clubpage;

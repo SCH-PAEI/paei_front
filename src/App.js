@@ -1,7 +1,6 @@
 import React from "react";
 import MainLayout from "./MainLayout";
 import BottomNav from "./components/BottomNav";
-import styled from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Homepage.jsx";

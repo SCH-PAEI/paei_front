@@ -15,9 +15,9 @@ const NavBar = styled.nav`
   right: 0;
   height: 60px;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
-
+  background-color: white;
   justify-content: space-around; // 아이템들 간격 동일하게
   border-top: 1px solid grey; // 상단 테두리 설정
 `;
@@ -28,33 +28,49 @@ const NavItem = styled.div`
   float: left;
   height: 60px;
   line-height: 70px;
+  position: relative;
 `;
+
+const IconWrapper = styled.div`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #989cfc;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 20px;
+`;
+
 const BottomNav = () => {
   return (
     <NavBar>
       <NavItem>
         <Link to="/">
-          <RiHome3Line size="25" />
+          <RiHome3Line size="25" color="black" />
         </Link>
       </NavItem>
       <NavItem>
         <Link to="club">
-          <AiOutlinePushpin size="25" />
+          <AiOutlinePushpin size="25" color="black" />
         </Link>
       </NavItem>
       <NavItem>
         <Link to="post">
-          <PiPencilSimple size="25" />
+          <IconWrapper>
+            <PiPencilSimple size="25" color="white" />
+          </IconWrapper>
         </Link>
       </NavItem>
       <NavItem>
         <Link to="chatting">
-          <IoChatbubbleEllipsesOutline size="25" />
+          <IoChatbubbleEllipsesOutline size="25" color="black" />
         </Link>
       </NavItem>
       <NavItem>
         <Link to="mypage">
-          <PiFinnTheHuman size="25" />
+          <PiFinnTheHuman size="25" color="black" />
         </Link>
       </NavItem>
     </NavBar>
