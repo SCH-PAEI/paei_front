@@ -20,7 +20,7 @@ const ModalContainer = styled.div`
   height: 50%;
   width: 70%;
   @media (min-width: 768px) {
-    width: 90%;
+    width: 85%;
   }
 `;
 
