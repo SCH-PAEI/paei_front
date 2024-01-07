@@ -24,6 +24,9 @@ const ModalContainer = styled.div`
   }
 `;
 
+const Button = styled.button`
+  background-color: red;
+`;
 function Modal({ isOpen, close, post }) {
   if (!isOpen) {
     return null;
@@ -34,6 +37,8 @@ function Modal({ isOpen, close, post }) {
         <h3>{post.title}</h3>
         <h3>{post.timestamp}</h3>
         <h3>{post.content}</h3>
+
+        <Button>신청하기</Button>
       </ModalContainer>
     </ModalBackground>
   );
