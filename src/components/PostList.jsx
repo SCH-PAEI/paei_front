@@ -16,7 +16,7 @@ function PostList() {
   const [selectedPost, setSelectedPost] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/posts")
+    fetch("http://localhost:3003/posts")
       .then((response) => response.json())
       .then((data) => setPosts(data));
   }, []);
