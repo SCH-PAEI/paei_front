@@ -8,9 +8,12 @@ function WritePost() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const now = new Date();
+    const date = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`;
     const postData = {
       title: title,
       content: content,
+      timestamp: date,
     };
 
     try {
