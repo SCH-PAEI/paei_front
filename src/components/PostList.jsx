@@ -35,6 +35,7 @@ function PostList() {
           <h2>{post.title}</h2>
           <p>{post.timestamp}</p>
           <p>{post.content}</p>
+          <p>{post.maxMember}</p>
         </Post>
       ))}
       <Modal

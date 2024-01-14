@@ -4,6 +4,7 @@ import axios from "axios";
 function WritePost() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [maxMember, setMaxMember] = useState(0);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,6 +15,7 @@ function WritePost() {
       title: title,
       content: content,
       timestamp: date,
+      maxMember: maxMember,
     };
 
     try {
@@ -26,6 +28,7 @@ function WritePost() {
         alert("post create successfully");
         setTitle("");
         setContent("");
+        setMaxMember(0);
       } else {
         alert("Failed to create post");
       }
@@ -46,10 +49,18 @@ function WritePost() {
         />
       </label>
       <label>
-        Content:
+        내용:
         <textarea
           value={content}
           onChange={(e) => setContent(e.target.value)}
+        />
+      </label>
+      <label>
+        신청 가능한 인원수:
+        <input
+          type="number"
+          value={maxMember}
+          onChanege={(e) => setMaxMember(e.target.value)}
         />
       </label>
       <button type="submit">Submit</button>
