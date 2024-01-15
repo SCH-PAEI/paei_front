@@ -60,7 +60,7 @@ function WritePost() {
         <input
           type="number"
           value={maxMember}
-          onChanege={(e) => setMaxMember(e.target.value)}
+          onChange={(e) => setMaxMember(e.target.value)}
         />
       </label>
       <button type="submit">Submit</button>
