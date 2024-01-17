@@ -72,117 +72,20 @@
       "timestamp": "2024-01-02",
       "content": "함께 공부할 동료를 찾습니다..."
     },
-    {
-      "title": "ㅇㅁㅇㄹ",
-      "content": "ㅇㅁㄻㄴㅇㄹ",
-      "id": 13
-    },
-    {
-      "title": "ㅇㄹ",
-      "content": "ㄴㅁㄻ",
-      "id": 14
-    },
-    {
-      "title": "ㅇㄹ",
-      "content": "ㄴㅁㄻ",
-      "id": 15
-    },
-    {
-      "title": "ㄴㅁㄹ",
-      "content": "ㄴㅁㅇㄹ",
-      "id": 16
-    },
-    {
-      "title": "ㅁㄴㄹ",
-      "content": "ㅁㄹㅇ",
-      "id": 17
-    },
-    {
-      "title": "아니",
-      "content": "이게 머야\n",
-      "id": 18
-    },
-    {
-      "title": "ㅁㄴㅇㄻㄴㄹ",
-      "content": "ㄴㅁㅇㄹㄴㅇㄻㄴㄹㅇ",
-      "id": 19
-    },
-    {
-      "title": "ㅁㄴㅇㄻㄴㄹ",
-      "content": "ㄴㅁㅇㄹㄴㅇㄻㄴㄹㅇ",
-      "id": 20
-    },
-    {
-      "title": "ㅁㄴㅇㄻㄴㄹ",
-      "content": "ㄴㅁㅇㄹㄴㅇㄻㄴㄹㅇ",
-      "id": 21
-    },
-    {
-      "title": "ㄴㅇㄻㅁㄴㅇ",
-      "content": "ㅁㄴㄹㅇㄴㅇ",
-      "id": 22
-    },
-    {
-      "title": "ㄴㅇㄻㅁㄴㅇ",
-      "content": "ㅁㄴㄹㅇㄴㅇ",
-      "id": 23
-    },
-    {
-      "title": "ㄴㅇㄻㅁㄴㅇ",
-      "content": "ㅁㄴㄹㅇㄴㅇ",
-      "id": 24
-    },
-    {
-      "title": "ㄴㅇㄻㅁㄴㅇ",
-      "content": "ㅁㄴㄹㅇㄴㅇ",
-      "id": 25
-    },
-    {
-      "title": "ㄴㅇㄻㅁㄴㅇ",
-      "content": "ㅁㄴㄹㅇㄴㅇ",
-      "id": 26
-    },
-    {
-      "title": "",
-      "content": "",
-      "id": 27
-    },
-    {
-      "title": "afasdf",
-      "content": "adsfads",
-      "date": "2024-1-13",
-      "id": 28
-    },
-    {
-      "title": "",
-      "content": "",
-      "date": "2024-1-13",
-      "id": 29
-    },
-    {
-      "title": "asdf",
-      "content": "asdf",
-      "timestamp": "2024-1-13",
-      "id": 30
-    },
-    {
-      "title": "dasf",
-      "content": "dfdafsdaf",
-      "timestamp": "2024-1-14",
-      "id": 31
-    },
-    {
-      "title": "6",
-      "content": "6",
-      "timestamp": "2024-1-14",
-      "id": 32
-    },
+
     {
       "title": "dsaf",
       "content": "saf",
       "timestamp": "2024-1-15",
       "maxMember": "8",
       "id": 33
+    },
+    {
+      "title": "",
+      "content": "",
+      "timestamp": "2024-1-16",
+      "maxMember": "14",
+      "id": 34
     }
   ]
 }
