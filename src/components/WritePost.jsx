@@ -5,6 +5,7 @@ function WritePost() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [maxMember, setMaxMember] = useState(0);
+  const [tag, setTag] = useState([]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -63,6 +64,16 @@ function WritePost() {
           onChange={(e) => setMaxMember(e.target.value)}
         />
       </label>
+      <label>
+        태그:
+        <select value={tag} onChange={(e) => setTag(e.target.value)}>
+          <option value="">선택하세요</option>
+          <option value="같이해요">같이해요</option>
+          <option value="같이배달">같이배달</option>
+          <option value="같이타요">같이타요</option>
+        </select>
+      </label>
+
       <button type="submit">Submit</button>
     </form>
   );
