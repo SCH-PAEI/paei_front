@@ -17,6 +17,7 @@ function WritePost() {
       content: content,
       timestamp: date,
       maxMember: maxMember,
+      tag: tag,
     };
 
     try {
