@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
+import SearchBar from "./SearchBar";
 
 const PostListContainer = styled.div`
   padding-bottom: 60px;
@@ -13,6 +14,7 @@ const Post = styled.div`
 `;
 function PostList() {
   const [posts, setPosts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
   const [selectedPost, setSelectedPost] = useState(null);
 
   useEffect(() => {
@@ -27,10 +29,15 @@ function PostList() {
   const closeModal = () => {
     setSelectedPost(null);
   };
+  const filteredPosts = posts.filter(
+    (post) =>
+      post.title.includes(searchTerm) || post.content.includes(searchTerm)
+  );
 
   return (
     <PostListContainer>
-      {posts.map((post) => (
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      {filteredPosts.map((post) => (
         <Post key={post.id} onClick={() => openModal(post)}>
           <h2>{post.title}</h2>
           <p>{post.timestamp}</p>

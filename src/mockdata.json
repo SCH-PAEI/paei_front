@@ -72,7 +72,6 @@
       "timestamp": "2024-01-02",
       "content": "함께 공부할 동료를 찾습니다..."
     },
-
     {
       "title": "dsaf",
       "content": "saf",
@@ -90,6 +89,14 @@
     {
       "title": "",
       "content": ""
+    },
+    {
+      "title": "1",
+      "content": "2",
+      "timestamp": "2024-1-21",
+      "maxMember": "2",
+      "tag": "같이해요",
+      "id": 35
     }
   ]
 }
