@@ -38,6 +38,7 @@ function Modal({ isOpen, close, post }) {
         <h3>{post.timestamp}</h3>
         <h3>{post.content}</h3>
         <h3>{post.maxMember}</h3>
+        <h3>{post.tag}</h3>
 
         <Button>신청하기</Button>
       </ModalContainer>
