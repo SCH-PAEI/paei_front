@@ -11,15 +11,20 @@ const Login = () => {
   const [show, setShow] = React.useState(false);
 
   const handleClick = () => setShow(!show);
-  const handleLogin = () => {
-    const validID = "test1";
-    const validPW = "test";
+  const handleLogin = async () => {
+    const response = await fetch("http://localhost:3003/members");
+    const members = await response.json();
 
-    if (ID === validID && PW == validPW) {
+    //입력한 ID와 PW가 일치하는 user 찾기
+    const user = members.find(
+      (member) => member.userID === ID && member.userPW === PW
+    );
+
+    if (user) {
       setIsLoggedIn(true);
       setError("");
     } else {
-      setError("로그인에 실패함");
+      setError("로그인 실패함");
     }
   };
 
