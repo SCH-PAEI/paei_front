@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import App from "../App";
+import Register from "../components/Resister";
 import styled from "styled-components";
 
 const Login = () => {
@@ -41,6 +42,7 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button onClick={handleLogin}>Submit</button>
+        <Register />
       </div>
     </>
   );

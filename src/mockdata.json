@@ -97,6 +97,30 @@
       "maxMember": "2",
       "tag": "같이해요",
       "id": 35
+    },
+    {
+      "title": "",
+      "content": "",
+      "timestamp": "2024-1-30",
+      "maxMember": 0,
+      "tag": [],
+      "id": 36
+    }
+  ],
+  "members": [
+    {
+      "id": "test1",
+      "pw": "test"
+    },
+    {
+      "userID": "test1",
+      "userPW": "test1",
+      "id": "Su8KeEV"
+    },
+    {
+      "userID": "test2",
+      "userPW": "test1",
+      "id": "1vhbQEy"
     }
   ]
 }
