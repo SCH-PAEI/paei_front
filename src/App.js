@@ -3,6 +3,7 @@ import MainLayout from "./MainLayout";
 import BottomNav from "./components/BottomNav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
+import UserInfo from "./components/UserInfo";
 import Home from "./pages/Homepage.jsx";
 import Club from "./pages/Clubpage.jsx";
 import Post from "./pages/Post.jsx";
@@ -18,6 +19,8 @@ const App = () => {
           <Route path="/post" element={<Post />} />
           <Route path="/chatting" element={<Chatting />} />
           <Route path="/mypage" element={<Mypage />} />
+          <Route path="/userinfo" element={<UserInfo />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <BottomNav />
       </MainLayout>
