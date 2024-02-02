@@ -3,16 +3,43 @@ import styled from "styled-components";
 import Modal from "./Modal";
 import SearchBar from "./SearchBar";
 import TagList from "./TagList";
+import { FiUser } from "react-icons/fi";
 
 const PostListContainer = styled.div`
   padding-bottom: 60px;
 `;
+
 const Post = styled.div`
-  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
   &:hover {
-    background-color: #f5f5f5; // 마우스를 올렸을 때 배경색 변경
+    background-color: #f5f5f5;
   }
 `;
+
+const PostHeader = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+function timeDifference(current, previous) {
+  const msPerMinute = 60 * 1000;
+  const msPerHour = msPerMinute * 60;
+  const msPerDay = msPerHour * 24;
+
+  const elapsed = current - previous;
+
+  if (elapsed < msPerMinute) {
+    return Math.round(elapsed / 1000) + "초 전";
+  } else if (elapsed < msPerHour) {
+    return Math.round(elapsed / msPerMinute) + "분 전";
+  } else if (elapsed < msPerDay) {
+    return Math.round(elapsed / msPerHour) + "시간 전";
+  } else {
+    const date = new Date(previous);
+    return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+  }
+}
+
 function PostList() {
   const [posts, setPosts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -34,7 +61,6 @@ function PostList() {
   const filteredPosts = posts.filter(
     (post) =>
       (post.title.includes(searchTerm) || post.content.includes(searchTerm)) &&
-      // post.tag가 undefined인 경우를 처리
       ((post.tag || "").includes(selectedTag) || selectedTag === "")
   );
 
@@ -44,11 +70,19 @@ function PostList() {
       <TagList setSelectedTag={setSelectedTag} />
       {filteredPosts.map((post) => (
         <Post key={post.id} onClick={() => openModal(post)}>
+          <PostHeader>
+            <span>{post.location}</span>
+            <span> | </span>
+            <span>{timeDifference(new Date(), new Date(post.timestamp))}</span>
+          </PostHeader>
           <h2>{post.title}</h2>
-          <p>{post.timestamp}</p>
           <p>{post.content}</p>
-          <p>{post.maxMember}</p>
-          <p>{post.tag}</p>
+          <div>
+            {post.maxMember > 0 &&
+              Array(Number(post.maxMember))
+                .fill()
+                .map((_, i) => <FiUser key={i} />)}
+          </div>
         </Post>
       ))}
       <Modal

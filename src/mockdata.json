@@ -1,118 +1,22 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "팀원 모집합니다",
-      "timestamp": "2024-01-01",
-      "content": "프로젝트 팀원을 모집합니다..."
-    },
-    {
-      "id": 2,
-      "title": "공부 모임 참여자 모집",
-      "timestamp": "2024-01-02",
-      "content": "함께 공부할 동료를 찾습니다..."
-    },
-    {
-      "id": 3,
-      "title": "팀원 모집합니다",
-      "timestamp": "2024-01-01",
-      "content": "프로젝트 팀원을 모집합니다..."
-    },
-    {
-      "id": 4,
-      "title": "공부 모임 참여자 모집",
-      "timestamp": "2024-01-02",
-      "content": "함께 공부할 동료를 찾습니다..."
-    },
-    {
-      "id": 5,
-      "title": "팀원 모집합니다",
-      "timestamp": "2024-01-01",
-      "content": "프로젝트 팀원을 모집합니다..."
-    },
-    {
-      "id": 6,
-      "title": "공부 모임 참여자 모집",
-      "timestamp": "2024-01-02",
-      "content": "함께 공부할 동료를 찾습니다..."
-    },
-    {
-      "id": 7,
-      "title": "팀원 모집합니다",
-      "timestamp": "2024-01-01",
-      "content": "프로젝트 팀원을 모집합니다..."
-    },
-    {
-      "id": 8,
-      "title": "공부 모임 참여자 모집",
-      "timestamp": "2024-01-02",
-      "content": "함께 공부할 동료를 찾습니다..."
-    },
-    {
-      "id": 9,
-      "title": "팀원 모집합니다",
-      "timestamp": "2024-01-01",
-      "content": "프로젝트 팀원을 모집합니다..."
-    },
-    {
-      "id": 10,
-      "title": "공부 모임 참여자 모집",
-      "timestamp": "2024-01-02",
-      "content": "함께 공부할 동료를 찾습니다..."
-    },
-    {
-      "id": 11,
-      "title": "팀원 모집합니다",
-      "timestamp": "2024-01-01",
-      "content": "프로젝트 팀원을 모집합니다..."
-    },
-    {
-      "id": 12,
-      "title": "공부 모임 참여자 모집",
-      "timestamp": "2024-01-02",
-      "content": "함께 공부할 동료를 찾습니다..."
-    },
-    {
-      "title": "dsaf",
-      "content": "saf",
-      "timestamp": "2024-1-15",
-      "maxMember": "8",
-      "id": 33
-    },
-    {
-      "title": "",
-      "content": "",
-      "timestamp": "2024-1-16",
-      "maxMember": "14",
-      "id": 34
-    },
-    {
-      "title": "",
-      "content": ""
-    },
-    {
-      "title": "1",
-      "content": "2",
-      "timestamp": "2024-1-21",
-      "maxMember": "2",
-      "tag": "같이해요",
-      "id": 35
-    },
-    {
-      "title": "",
-      "content": "",
-      "timestamp": "2024-1-30",
-      "maxMember": 0,
-      "tag": [],
-      "id": 36
-    },
-    {
-      "title": "test1",
-      "content": "마이크테스트 원 투 원 투 ",
-      "timestamp": "2024-1-30",
+      "title": "향1 엽떡 같이 시킬 사람",
+      "content": "향 1 엽떡 같이 시킬 사람 구해요~!",
+      "timestamp": "2024-2-2 10:32:52",
       "maxMember": "5",
+      "tag": "같이배달",
+      "location": "향설 1관",
+      "id": 1
+    },
+    {
+      "title": "신창역에서 같이 택시 타실 분",
+      "content": "신창역에서 향설까지 같이 택시 타실 분 구해요",
+      "timestamp": "2024-2-2 10:37:20",
+      "maxMember": "3",
       "tag": "같이타요",
-      "id": 37
+      "location": "신창역",
+      "id": 2
     }
   ],
   "members": [
@@ -159,6 +63,11 @@
       "userID": "test5",
       "userPW": "test5",
       "id": "4r8iUkG"
+    },
+    {
+      "userID": "tq",
+      "userPW": "tq",
+      "id": "PGiWlkA"
     }
   ]
 }

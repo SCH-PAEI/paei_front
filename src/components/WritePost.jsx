@@ -1,23 +1,33 @@
 import React, { useState } from "react";
 import axios from "axios";
+import styled from "styledcomponents";
 
 function WritePost() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [maxMember, setMaxMember] = useState(0);
-  const [tag, setTag] = useState([]);
+  const [maxMember, setMaxMember] = useState(1);
+  const [tag, setTag] = useState("");
+  const [location, setLocation] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (!title || !content || !location || !tag || maxMember < 1) {
+      alert("모든 항목을 채우고, 인원수는 1명 이상 입력해주세요.");
+      return;
+    }
+
     const now = new Date();
-    const date = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`;
+    const date = `${now.getFullYear()}-${
+      now.getMonth() + 1
+    }-${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
     const postData = {
       title: title,
       content: content,
       timestamp: date,
       maxMember: maxMember,
       tag: tag,
+      location: location,
     };
 
     try {
@@ -30,7 +40,9 @@ function WritePost() {
         alert("post create successfully");
         setTitle("");
         setContent("");
-        setMaxMember(0);
+        setMaxMember(1);
+        setTag("");
+        setLocation("");
       } else {
         alert("Failed to create post");
       }
@@ -58,9 +70,18 @@ function WritePost() {
         />
       </label>
       <label>
+        장소:
+        <input
+          type="text"
+          value={location}
+          onChange={(e) => setLocation(e.target.value)}
+        />
+      </label>
+      <label>
         신청 가능한 인원수:
         <input
           type="number"
+          min="1"
           value={maxMember}
           onChange={(e) => setMaxMember(e.target.value)}
         />
