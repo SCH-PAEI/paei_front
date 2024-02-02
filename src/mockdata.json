@@ -7,8 +7,18 @@
       "maxMember": 3,
       "tag": "같이배달",
       "location": "향설1관",
-      "currentMembers": 5,
+      "currentMembers": 6,
       "id": 1
+    },
+    {
+      "title": "스터디원 구해요",
+      "content": "밤샘 스터디 하실분 구해요. 과목은 자율",
+      "timestamp": "2024-2-3 6:15:30",
+      "maxMember": 5,
+      "tag": "같이해요",
+      "location": "아고라에토스",
+      "currentMembers": 0,
+      "id": 2
     }
   ],
   "members": [
@@ -71,6 +81,14 @@
       "postId": 1,
       "id": 1,
       "currentMembers": 2
+    },
+    {
+      "title": "스터디원 구해요",
+      "members": [
+        "user1"
+      ],
+      "postId": 2,
+      "id": 2
     }
   ]
 }

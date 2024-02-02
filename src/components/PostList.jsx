@@ -51,7 +51,7 @@ function PostList() {
   useEffect(() => {
     fetch("http://localhost:3003/posts")
       .then((response) => response.json())
-      .then((data) => setPosts(data));
+      .then((data) => setPosts(data.reverse()));
   }, []);
 
   const openModal = (post) => {
