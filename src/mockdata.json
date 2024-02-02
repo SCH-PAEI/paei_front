@@ -17,6 +17,33 @@
       "tag": "같이타요",
       "location": "신창역",
       "id": 2
+    },
+    {
+      "title": "밤샘 스터디 ",
+      "content": "도서관에서 밤샘 스터디 하실분 구해요",
+      "timestamp": "2024-2-2 13:5:17",
+      "maxMember": "3",
+      "tag": "같이배달",
+      "location": "아고라에토스",
+      "id": 3
+    },
+    {
+      "title": "1",
+      "content": "11",
+      "timestamp": "2024-2-2 13:5:40",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "1",
+      "id": 4
+    },
+    {
+      "title": "모각코 ",
+      "content": "디스코드로 모각코 하실 분 구해요.",
+      "timestamp": "2024-2-2 13:15:49",
+      "maxMember": "3",
+      "tag": "같이해요",
+      "location": "디스코드",
+      "id": 5
     }
   ],
   "members": [

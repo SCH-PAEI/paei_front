@@ -11,6 +11,7 @@ const PostListContainer = styled.div`
 
 const Post = styled.div`
   border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 10px;
   &:hover {
     background-color: #f5f5f5;
   }
