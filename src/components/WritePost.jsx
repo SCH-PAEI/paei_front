@@ -122,6 +122,23 @@ function WritePost() {
         setMaxMember(1);
         setTag("");
         setLocation("");
+
+        const chatroomData = {
+          title: title,
+          members: ["user1"],
+          postId: response.data.id,
+        };
+
+        const chatroomResponse = await axios.post(
+          "http://localhost:3003/chatrooms",
+          chatroomData
+        );
+
+        if (chatroomResponse.status == 201) {
+          alert("Chat room created successfully");
+        } else {
+          alert("Failed to create chat room");
+        }
       } else {
         alert("Failed to create post");
       }

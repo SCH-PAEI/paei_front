@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { FiUser } from "react-icons/fi";
-
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const ModalBackground = styled.div`
   position: fixed;
   top: 0;
@@ -62,11 +63,53 @@ const Button = styled.button`
 `;
 
 function Modal({ isOpen, close, post }) {
+  const navigate = useNavigate();
+
   if (!isOpen) {
     return null;
   }
 
-  const members = post.members || 0;
+  const applyPost = async () => {
+    try {
+      // 해당 게시글 정보를 가져옵니다.
+      const postResponse = await axios.get(
+        `http://localhost:3003/posts/${post.id}`
+      );
+
+      if (postResponse.data) {
+        const post = postResponse.data;
+
+        // 파티 정원 확인--오류
+        if (post.currentMembers >= post.maxMembers) {
+          alert("파티 정원이 가득찼습니다.");
+          return;
+        }
+
+        // 신청한 사용자를 게시글에 추가
+        const updatedPost = {
+          ...post,
+          currentMembers: post.currentMembers ? post.currentMembers + 1 : 1,
+        };
+
+        const response = await axios.put(
+          `http://localhost:3003/posts/${post.id}`,
+          updatedPost
+        );
+
+        if (response.status == 200) {
+          alert("파티 신청 성공");
+          navigate(`/chatting/${post.id}`);
+        } else {
+          alert("파티 신청 실패");
+        }
+      } else {
+        alert("게시글이 존재하지 않음");
+      }
+    } catch (error) {
+      console.error("Error", error);
+      alert("Error");
+    }
+  };
 
   return (
     <ModalBackground onClick={close}>
@@ -75,9 +118,9 @@ function Modal({ isOpen, close, post }) {
         <Content>{post.content}</Content>
         <Member>
           <FiUser size={20} />
-          {members}/{post.maxMember}
+          {post.currentMembers}/{post.maxMember}
         </Member>
-        <Button>신청하기</Button>
+        <Button onClick={applyPost}>신청하기</Button>
       </ModalContainer>
     </ModalBackground>
   );

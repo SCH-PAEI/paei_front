@@ -7,7 +7,9 @@
       "maxMember": "5",
       "tag": "같이배달",
       "location": "향설 1관",
-      "id": 1
+      "id": 1,
+      "currentMember": null,
+      "currentMembers": 8
     },
     {
       "title": "신창역에서 같이 택시 타실 분",
@@ -16,7 +18,8 @@
       "maxMember": "3",
       "tag": "같이타요",
       "location": "신창역",
-      "id": 2
+      "id": 2,
+      "currentMembers": 5
     },
     {
       "title": "밤샘 스터디 ",
@@ -25,7 +28,9 @@
       "maxMember": "3",
       "tag": "같이배달",
       "location": "아고라에토스",
-      "id": 3
+      "id": 3,
+      "currentMember": null,
+      "currentMembers": 1
     },
     {
       "title": "1",
@@ -34,7 +39,8 @@
       "maxMember": 1,
       "tag": "같이해요",
       "location": "1",
-      "id": 4
+      "id": 4,
+      "currentMembers": 2
     },
     {
       "title": "모각코 ",
@@ -43,7 +49,8 @@
       "maxMember": "3",
       "tag": "같이해요",
       "location": "디스코드",
-      "id": 5
+      "id": 5,
+      "currentMembers": 1
     },
     {
       "title": "1",
@@ -53,6 +60,36 @@
       "tag": "같이배달",
       "location": "1",
       "id": 6
+    },
+    {
+      "title": "ㅇㅇ",
+      "content": "ㅇㅇ",
+      "timestamp": "2024-2-3 5:13:7",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "d",
+      "id": 7
+    },
+    {
+      "title": "d",
+      "content": "d",
+      "timestamp": "2024-2-3 5:15:27",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "d",
+      "id": 8,
+      "currentMember": null,
+      "currentMembers": 1
+    },
+    {
+      "title": "채팅방 테스트1",
+      "content": "2",
+      "timestamp": "2024-2-3 5:42:42",
+      "maxMember": "2",
+      "tag": "같이배달",
+      "location": "1",
+      "id": 9,
+      "currentMembers": 4
     }
   ],
   "members": [
@@ -104,6 +141,24 @@
       "userID": "tq",
       "userPW": "tq",
       "id": "PGiWlkA"
+    }
+  ],
+  "chatrooms": [
+    {
+      "title": "d",
+      "members": [
+        "user1"
+      ],
+      "postId": 8,
+      "id": 1
+    },
+    {
+      "title": "채팅방 테스트1",
+      "members": [
+        "user1"
+      ],
+      "postId": 9,
+      "id": 2
     }
   ]
 }
