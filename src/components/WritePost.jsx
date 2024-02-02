@@ -107,6 +107,7 @@ function WritePost() {
       maxMember: maxMember,
       tag: tag,
       location: location,
+      currentMembers: 0,
     };
 
     try {
@@ -133,12 +134,6 @@ function WritePost() {
           "http://localhost:3003/chatrooms",
           chatroomData
         );
-
-        if (chatroomResponse.status == 201) {
-          alert("Chat room created successfully");
-        } else {
-          alert("Failed to create chat room");
-        }
       } else {
         alert("Failed to create post");
       }
@@ -193,7 +188,7 @@ function WritePost() {
             type="number"
             min="1"
             value={maxMember}
-            onChange={(e) => setMaxMember(e.target.value)}
+            onChange={(e) => setMaxMember(parseInt(e.target.value))}
           />
         </Label>
         <Label>

@@ -79,12 +79,6 @@ function Modal({ isOpen, close, post }) {
       if (postResponse.data) {
         const post = postResponse.data;
 
-        // 파티 정원 확인--오류
-        if (post.currentMembers >= post.maxMembers) {
-          alert("파티 정원이 가득찼습니다.");
-          return;
-        }
-
         // 신청한 사용자를 게시글에 추가
         const updatedPost = {
           ...post,

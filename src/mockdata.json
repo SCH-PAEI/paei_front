@@ -1,95 +1,14 @@
 {
   "posts": [
     {
-      "title": "향1 엽떡 같이 시킬 사람",
-      "content": "향 1 엽떡 같이 시킬 사람 구해요~!",
-      "timestamp": "2024-2-2 10:32:52",
-      "maxMember": "5",
+      "title": "같이 엽떡 시킬분~",
+      "content": "엽떡 배달비 n빵 하실 분 구해요!",
+      "timestamp": "2024-2-3 6:8:36",
+      "maxMember": 3,
       "tag": "같이배달",
-      "location": "향설 1관",
-      "id": 1,
-      "currentMember": null,
-      "currentMembers": 8
-    },
-    {
-      "title": "신창역에서 같이 택시 타실 분",
-      "content": "신창역에서 향설까지 같이 택시 타실 분 구해요",
-      "timestamp": "2024-2-2 10:37:20",
-      "maxMember": "3",
-      "tag": "같이타요",
-      "location": "신창역",
-      "id": 2,
-      "currentMembers": 5
-    },
-    {
-      "title": "밤샘 스터디 ",
-      "content": "도서관에서 밤샘 스터디 하실분 구해요",
-      "timestamp": "2024-2-2 13:5:17",
-      "maxMember": "3",
-      "tag": "같이배달",
-      "location": "아고라에토스",
-      "id": 3,
-      "currentMember": null,
-      "currentMembers": 1
-    },
-    {
-      "title": "1",
-      "content": "11",
-      "timestamp": "2024-2-2 13:5:40",
-      "maxMember": 1,
-      "tag": "같이해요",
-      "location": "1",
-      "id": 4,
-      "currentMembers": 2
-    },
-    {
-      "title": "모각코 ",
-      "content": "디스코드로 모각코 하실 분 구해요.",
-      "timestamp": "2024-2-2 13:15:49",
-      "maxMember": "3",
-      "tag": "같이해요",
-      "location": "디스코드",
-      "id": 5,
-      "currentMembers": 1
-    },
-    {
-      "title": "1",
-      "content": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
-      "timestamp": "2024-2-2 22:14:37",
-      "maxMember": 1,
-      "tag": "같이배달",
-      "location": "1",
-      "id": 6
-    },
-    {
-      "title": "ㅇㅇ",
-      "content": "ㅇㅇ",
-      "timestamp": "2024-2-3 5:13:7",
-      "maxMember": 1,
-      "tag": "같이배달",
-      "location": "d",
-      "id": 7
-    },
-    {
-      "title": "d",
-      "content": "d",
-      "timestamp": "2024-2-3 5:15:27",
-      "maxMember": 1,
-      "tag": "같이배달",
-      "location": "d",
-      "id": 8,
-      "currentMember": null,
-      "currentMembers": 1
-    },
-    {
-      "title": "채팅방 테스트1",
-      "content": "2",
-      "timestamp": "2024-2-3 5:42:42",
-      "maxMember": "2",
-      "tag": "같이배달",
-      "location": "1",
-      "id": 9,
-      "currentMembers": 4
+      "location": "향설1관",
+      "currentMembers": 5,
+      "id": 1
     }
   ],
   "members": [
@@ -145,20 +64,13 @@
   ],
   "chatrooms": [
     {
-      "title": "d",
+      "title": "같이 엽떡 시킬분~",
       "members": [
         "user1"
       ],
-      "postId": 8,
-      "id": 1
-    },
-    {
-      "title": "채팅방 테스트1",
-      "members": [
-        "user1"
-      ],
-      "postId": 9,
-      "id": 2
+      "postId": 1,
+      "id": 1,
+      "currentMembers": 2
     }
   ]
 }
