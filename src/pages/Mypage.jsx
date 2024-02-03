@@ -3,7 +3,6 @@ import UserInfo from "../components/UserInfo";
 const Mypage = () => {
   return (
     <div>
-      나의 정보
       <UserInfo />
     </div>
   );
