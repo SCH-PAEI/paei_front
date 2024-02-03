@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
+import { FiX } from "react-icons/fi";
 
 const Title = styled.h1`
   font-size: 20px;
@@ -9,6 +10,10 @@ const Title = styled.h1`
   align-items: center;
   border-bottom: 1px solid #acacac;
   padding-bottom: 10px;
+  & > :first-child {
+    position: absolute;
+    left: 10px;
+  }
 `;
 
 const Form = styled.form`
@@ -42,7 +47,7 @@ const SubmitButton = styled.button`
   cursor: pointer;
 `;
 
-function UserInfo() {
+function UserInfo({ userID }) {
   const [nickname, setNickname] = useState("");
   const [department, setDepartment] = useState("");
   const [studentNumber, setStudentNumber] = useState("");
@@ -72,12 +77,12 @@ function UserInfo() {
     };
 
     try {
-      const response = await axios.post(
-        "http://localhost:3003/members",
+      const response = await axios.patch(
+        `http://localhost:3003/members/${userID}`,
         userInfo
       );
 
-      if (response.status == 201) {
+      if (response.status == 200) {
         alert("User info successfully saved");
         setNickname("");
         setDepartment("");
@@ -92,9 +97,17 @@ function UserInfo() {
     }
   };
 
+  const handleIconClick = () => {
+    // 아이콘 클릭 시 수행할 작업
+    // 예를 들어 페이지를 이전 상태로 돌리거나 모달을 닫는 등의 작업
+  };
+
   return (
     <div>
-      <Title>사용자 정보 입력</Title>
+      <Title>
+        <FiX size={24} onClick={handleIconClick} />
+        사용자 정보 입력
+      </Title>
       <Form onSubmit={handleSubmit}>
         <Label>
           닉네임:

@@ -12,22 +12,31 @@ const Login = () => {
   const [show, setShow] = React.useState(false);
   const [userInfoCompleted, setUserInfoCompleted] = useState(null);
   const [showPersonalInfo, setShowPersonalInfo] = useState(false);
+  const [userID, setUserID] = useState(null);
 
   const handleClick = () => setShow(!show);
+
   const handleLogin = async () => {
     const response = await fetch("http://localhost:3003/members");
     const members = await response.json();
 
-    // 입력한 ID와 PW가 일치하는 user 찾기
     const user = members.find(
       (member) => member.userID === ID && member.userPW === PW
     );
 
     if (user) {
       setIsLoggedIn(true);
-      setUserInfoCompleted(
-        user.userInfoCompleted !== undefined ? user.userInfoCompleted : false
-      ); // userInfoCompleted 상태가 undefined이면 false로 설정
+      setUserID(user.id); // 로그인한 사용자의 ID 저장
+      if (
+        user.nickname &&
+        user.department &&
+        user.studentNumber &&
+        user.accountNumber
+      ) {
+        setUserInfoCompleted(true);
+      } else {
+        setUserInfoCompleted(false);
+      }
       setError("");
     } else {
       setError("로그인 실패함");
@@ -36,12 +45,12 @@ const Login = () => {
 
   useEffect(() => {
     if (isLoggedIn && userInfoCompleted === false) {
-      setShowPersonalInfo(true); // 로그인이 되었고, 개인 정보가 설정되지 않았으면, 개인 정보 설정 화면 표시
+      setShowPersonalInfo(true);
     }
   }, [isLoggedIn, userInfoCompleted]);
 
   if (showPersonalInfo) {
-    return <UserInfo />; // 개인 정보 설정 화면을 표시
+    return <UserInfo userID={userID} />;
   }
   if (isLoggedIn) {
     return <App />;
@@ -54,7 +63,8 @@ const Login = () => {
           type="text"
           placeholder="ID"
           value={ID}
-          onChange={(e) => setID(e.target.value)}></input>
+          onChange={(e) => setID(e.target.value)}
+        />
         <input
           type={show ? "text" : "password"}
           placeholder="password"
