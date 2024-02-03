@@ -73,6 +73,7 @@ const SubmitButton = styled.button`
   color: white;
   background-color: #7176ff;
   border: none;
+  outline: none;
   border-radius: 5px;
   cursor: pointer;
 `;

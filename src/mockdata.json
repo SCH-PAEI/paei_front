@@ -17,7 +17,7 @@
       "maxMember": 5,
       "tag": "같이해요",
       "location": "아고라에토스",
-      "currentMembers": 0,
+      "currentMembers": 1,
       "id": 2
     }
   ],
@@ -70,6 +70,27 @@
       "userID": "tq",
       "userPW": "tq",
       "id": "PGiWlkA"
+    },
+    {
+      "nickname": "ddadf",
+      "department": "asdfdasf",
+      "studentNumber": "sadf",
+      "accountNumber": "dsafasdf",
+      "id": "dp-lCAX"
+    },
+    {
+      "nickname": "",
+      "department": "",
+      "studentNumber": "",
+      "accountNumber": "",
+      "id": "RG7s2a4"
+    },
+    {
+      "nickname": "dfad",
+      "department": "afdadsf",
+      "studentNumber": "1111",
+      "accountNumber": "111",
+      "id": "lO56frm"
     }
   ],
   "chatrooms": [
