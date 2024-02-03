@@ -39,7 +39,7 @@ const CategoryButton = styled.button`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding-right: 10px;
 `;
 
 const Label = styled.label`
@@ -69,11 +69,11 @@ const TextArea = styled.textarea`
 const SubmitButton = styled.button`
   margin-top: 20px;
   padding: 10px;
+
   width: 100%;
   color: white;
   background-color: #7176ff;
   border: none;
-  outline: none;
   border-radius: 5px;
   cursor: pointer;
 `;
