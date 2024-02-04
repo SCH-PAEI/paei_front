@@ -4,6 +4,57 @@ import Register from "../components/Resister";
 import UserInfo from "../components/UserInfo";
 import styled from "styled-components";
 
+const LoginContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #989cfc;
+`;
+
+const Title = styled.h1`
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 40px;
+`;
+
+const LoginText = styled.p`
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+`;
+
+const Input = styled.input`
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 80%; // 반응형으로 너비 수정
+  color: #fff;
+`;
+
+const Button = styled.button`
+  background-color: #7176ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 86%; // 반응형으로 너비 수정
+  cursor: pointer;
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: #615edf;
+  }
+`;
+const RegisterText = styled.p`
+  color: #fff;
+  cursor: pointer;
+`;
+
 const Login = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [error, setError] = useState("");
@@ -57,24 +108,24 @@ const Login = () => {
   }
 
   return (
-    <>
-      <div>
-        <input
-          type="text"
-          placeholder="ID"
-          value={ID}
-          onChange={(e) => setID(e.target.value)}
-        />
-        <input
-          type={show ? "text" : "password"}
-          placeholder="password"
-          value={PW}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button onClick={handleLogin}>Submit</button>
-        <Register />
-      </div>
-    </>
+    <LoginContainer>
+      <Title>PAEI</Title>
+      <LoginText>로그인</LoginText>
+      <Input
+        type="text"
+        placeholder="ID"
+        value={ID}
+        onChange={(e) => setID(e.target.value)}
+      />
+      <Input
+        type={show ? "text" : "password"}
+        placeholder="Password"
+        value={PW}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <Button onClick={handleLogin}>Start</Button>
+      <RegisterText onClick={handleClick}>Register</RegisterText>
+    </LoginContainer>
   );
 };
 

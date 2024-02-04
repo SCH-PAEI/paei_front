@@ -25,15 +25,17 @@ const AppInner = () => {
   return (
     <MainLayout>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/club" element={<Club />} />
         <Route path="/post" element={<Post />} />
         <Route path="/chatting" element={<Chatting />} />
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/userinfo" element={<UserInfo />} />
-        <Route path="/login" element={<Login />} />
       </Routes>
-      {location.pathname !== "/post" && <BottomNav />}
+      {location.pathname !== "/post" && location.pathname !== "/" && (
+        <BottomNav />
+      )}
     </MainLayout>
   );
 };

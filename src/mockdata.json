@@ -7,7 +7,7 @@
       "maxMember": 3,
       "tag": "같이배달",
       "location": "향설1관",
-      "currentMembers": 6,
+      "currentMembers": 7,
       "id": 1
     },
     {
@@ -19,179 +19,107 @@
       "location": "아고라에토스",
       "currentMembers": 1,
       "id": 2
+    },
+    {
+      "title": "tt",
+      "content": "tt",
+      "timestamp": "2024-2-4 10:16:32",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "11",
+      "currentMembers": 1,
+      "id": 3
     }
   ],
   "members": [
     {
-      "id": "test1",
-      "pw": "test"
-    },
-    {
       "userID": "test1",
       "userPW": "test1",
-      "id": "Su8KeEV"
+      "id": 1,
+      "nickname": "test1",
+      "department": "컴퓨터소프트웨어공학과",
+      "studentNumber": "20200001",
+      "accountNumber": "1111111111"
     },
     {
       "userID": "test2",
-      "userPW": "test1",
-      "id": "1vhbQEy"
-    },
-    {
-      "userID": "",
-      "userPW": "",
-      "id": "q9G1hmW"
-    },
-    {
-      "userID": "",
-      "userPW": "",
-      "id": "tCZWAe7"
-    },
-    {
-      "userID": "",
-      "userPW": "",
-      "id": "498yeC1"
+      "userPW": "test2",
+      "id": 2
     },
     {
       "userID": "test3",
       "userPW": "test3",
-      "id": "diI5sf3"
+      "id": 3
     },
     {
       "userID": "test4",
-      "userPW": "test3",
-      "id": "AcZyHa9"
+      "userPW": "test4",
+      "id": 4
     },
     {
       "userID": "test5",
       "userPW": "test5",
-      "id": "4r8iUkG"
+      "id": 5
     },
     {
-      "userID": "tq",
-      "userPW": "tq",
-      "id": "PGiWlkA"
+      "userID": "test6",
+      "userPW": "test6",
+      "id": 6
     },
     {
-      "nickname": "ddadf",
-      "department": "asdfdasf",
-      "studentNumber": "sadf",
-      "accountNumber": "dsafasdf",
-      "id": "dp-lCAX"
-    },
-    {
-      "nickname": "",
-      "department": "",
-      "studentNumber": "",
-      "accountNumber": "",
-      "id": "RG7s2a4"
-    },
-    {
-      "nickname": "dfad",
-      "department": "afdadsf",
-      "studentNumber": "1111",
-      "accountNumber": "111",
-      "id": "lO56frm"
-    },
-    {
-      "nickname": "11",
-      "department": "11",
-      "studentNumber": "11",
-      "accountNumber": "11",
-      "id": "5gRH1dC"
-    },
-    {
-      "nickname": "dd",
-      "department": "ddf",
-      "studentNumber": "111",
-      "accountNumber": "111",
-      "id": "-a0tMG7"
-    },
-    {
-      "userID": "test111",
-      "userPW": "test111",
-      "id": "GT78cNw"
-    },
-    {
-      "nickname": "ddad",
-      "department": "f",
-      "studentNumber": "111",
-      "accountNumber": "111",
-      "id": "Q4FebEx"
-    },
-    {
-      "userID": "test22",
-      "userPW": "test22",
-      "id": "WQv3WpX"
-    },
-    {
-      "userID": "test22",
-      "userPW": "test22",
-      "id": "i8CL35D"
-    },
-    {
-      "userID": "test33",
-      "userPW": "test33",
-      "id": "oKDZwhC"
-    },
-    {
-      "nickname": "asdfasdfsad",
-      "department": "fsaf",
-      "studentNumber": "1111",
-      "accountNumber": "111",
-      "id": "_C-L-z5"
-    },
-    {
-      "nickname": "dsfasf",
-      "department": "asfdasdf1",
-      "studentNumber": "11",
-      "accountNumber": "11",
-      "id": "Zolhr5T"
-    },
-    {
-      "userID": "login1",
-      "userPW": "login1",
-      "id": "D858_6L",
-      "nickname": "login1",
-      "department": "login1",
+      "userID": "test11",
+      "userPW": "test11",
+      "id": 7,
+      "nickname": "111",
+      "department": "111",
       "studentNumber": "111",
       "accountNumber": "111"
     },
     {
-      "userID": "login2",
-      "userPW": "login2",
-      "id": "wKMlvwn",
-      "nickname": "daf",
-      "department": "sdfas",
+      "userID": "test12",
+      "userPW": "test12",
+      "id": 8,
+      "nickname": "test12",
+      "department": "test12",
+      "studentNumber": "111",
+      "accountNumber": "111"
+    },
+    {
+      "userID": "test13",
+      "userPW": "test13",
+      "id": 9,
+      "nickname": "test13",
+      "department": "test13",
       "studentNumber": "11",
       "accountNumber": "11"
     },
     {
-      "userID": "login3",
-      "userPW": "login3",
-      "id": "6Awb12g",
-      "nickname": "login3",
-      "department": "login3",
-      "studentNumber": "111",
-      "accountNumber": "111"
+      "userID": "test14",
+      "userPW": "test14",
+      "id": 10,
+      "nickname": "test14",
+      "department": "test14",
+      "studentNumber": "11",
+      "accountNumber": "11"
+    },
+    {
+      "userID": "test15",
+      "userPW": "test15",
+      "id": 11,
+      "nickname": "test15",
+      "department": "test1511",
+      "studentNumber": "11",
+      "accountNumber": "11"
     }
   ],
   "chatrooms": [
     {
-      "title": "같이 엽떡 시킬분~",
+      "title": "tt",
       "members": [
         "user1"
       ],
-      "postId": 1,
-      "id": 1,
-      "currentMembers": 2
-    },
-    {
-      "title": "스터디원 구해요",
-      "members": [
-        "user1"
-      ],
-      "postId": 2,
-      "id": 2
+      "postId": 3,
+      "id": 1
     }
   ]
 }
