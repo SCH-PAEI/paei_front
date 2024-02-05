@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { UserContext } from "../App";
 import axios from "axios";
 import styled from "styled-components";
 import { FiX } from "react-icons/fi";
@@ -84,7 +85,7 @@ function WritePost() {
   const [maxMember, setMaxMember] = useState(1);
   const [tag, setTag] = useState("");
   const [location, setLocation] = useState("");
-
+  const { userID } = useContext(UserContext);
   const navigate = useNavigate();
   const handleIconClick = () => {
     navigate("/home");
@@ -109,11 +110,12 @@ function WritePost() {
       tag: tag,
       location: location,
       currentMembers: 0,
+      userID: userID,
     };
 
     try {
       const response = await axios.post(
-        "http://localhost:3003/posts",
+        `http://localhost:3003/posts?userID=${userID}`, // userID를 포함한 주소로 요청
         postData
       );
 

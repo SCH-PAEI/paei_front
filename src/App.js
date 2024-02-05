@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, createContext } from "react";
 import MainLayout from "./MainLayout";
 import BottomNav from "./components/BottomNav";
 import {
@@ -16,21 +16,29 @@ import Post from "./pages/Post.jsx";
 import Chatting from "./pages/Chatting.jsx";
 import Mypage from "./pages/Mypage.jsx";
 import Register from "./pages/Register.jsx";
+
+// UserContext 생성
+export const UserContext = createContext(null);
+
 const App = () => {
+  // 사용자 ID를 저장하는 상태 생성
+  const [userID, setUserID] = useState(null);
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/*" element={<AppInner />} />{" "}
-        {/* AppInner 컴포넌트를 Routes 내부로 이동 */}
-      </Routes>
-    </BrowserRouter>
+    <UserContext.Provider value={{ userID, setUserID }}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/*" element={<AppInner />} />{" "}
+        </Routes>
+      </BrowserRouter>
+    </UserContext.Provider>
   );
 };
-// AppInner 컴포넌트 추가
+
 const AppInner = () => {
-  const location = useLocation(); // BrowserRouter 안에서 호출
+  const location = useLocation();
 
   return (
     <MainLayout>

@@ -17,7 +17,7 @@
       "maxMember": 5,
       "tag": "같이해요",
       "location": "아고라에토스",
-      "currentMembers": 1,
+      "currentMembers": 2,
       "id": 2
     },
     {
@@ -29,6 +29,99 @@
       "location": "11",
       "currentMembers": 1,
       "id": 3
+    },
+    {
+      "title": "사용자 식별 테스트",
+      "content": "게시글 작성 시 사용자 아이디 저장 테스트 ",
+      "timestamp": "2024-2-5 22:11:4",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "작고 소중한 제이슨서버",
+      "currentMembers": 0,
+      "id": 4
+    },
+    {
+      "title": "사용자 식별_test4",
+      "content": "사용자 아이디 저장 테스트_test4 userId:4",
+      "timestamp": "2024-2-5 22:13:18",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "11",
+      "currentMembers": 0,
+      "id": 5
+    },
+    {
+      "title": "사용자 식별 test5",
+      "content": "test5 userid 5",
+      "timestamp": "2024-2-5 22:14:24",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "5",
+      "currentMembers": 0,
+      "id": 6
+    },
+    {
+      "title": "아이디확인",
+      "content": "콘솔로 아이디 확인",
+      "timestamp": "2024-2-5 22:20:21",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "1",
+      "currentMembers": 0,
+      "id": 7
+    },
+    {
+      "title": "11",
+      "content": "11",
+      "timestamp": "2024-2-5 22:20:58",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "11",
+      "currentMembers": 0,
+      "id": 8
+    },
+    {
+      "title": "11",
+      "content": "11",
+      "timestamp": "2024-2-5 22:37:37",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "11",
+      "currentMembers": 0,
+      "userID": null,
+      "id": 9
+    },
+    {
+      "title": "11",
+      "content": "11",
+      "timestamp": "2024-2-5 22:38:26",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "111",
+      "currentMembers": 0,
+      "userID": null,
+      "id": 10
+    },
+    {
+      "title": "11",
+      "content": "11",
+      "timestamp": "2024-2-5 23:33:32",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "1",
+      "currentMembers": 0,
+      "id": 11
+    },
+    {
+      "title": "UserIDtest1",
+      "content": "UserIDtest1, id:20",
+      "timestamp": "2024-2-5 23:37:29",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "1",
+      "currentMembers": 0,
+      "userID": 20,
+      "id": 12
     }
   ],
   "members": [
@@ -54,7 +147,11 @@
     {
       "userID": "test4",
       "userPW": "test4",
-      "id": 4
+      "id": 4,
+      "nickname": "사용자4",
+      "department": "컴소공",
+      "studentNumber": "20204004",
+      "accountNumber": "111111111"
     },
     {
       "userID": "test5",
@@ -166,6 +263,15 @@
       "userID": "",
       "userPW": "",
       "id": 19
+    },
+    {
+      "userID": "UserIDtest1",
+      "userPW": "UserIDtest1",
+      "id": 20,
+      "nickname": "UserIDtest1",
+      "department": "UserIDtest1",
+      "studentNumber": "11",
+      "accountNumber": "11"
     }
   ],
   "chatrooms": [
@@ -176,6 +282,78 @@
       ],
       "postId": 3,
       "id": 1
+    },
+    {
+      "title": "사용자 식별 테스트",
+      "members": [
+        "user1"
+      ],
+      "postId": 4,
+      "id": 2
+    },
+    {
+      "title": "사용자 식별_test4",
+      "members": [
+        "user1"
+      ],
+      "postId": 5,
+      "id": 3
+    },
+    {
+      "title": "사용자 식별 test5",
+      "members": [
+        "user1"
+      ],
+      "postId": 6,
+      "id": 4
+    },
+    {
+      "title": "아이디확인",
+      "members": [
+        "user1"
+      ],
+      "postId": 7,
+      "id": 5
+    },
+    {
+      "title": "11",
+      "members": [
+        "user1"
+      ],
+      "postId": 8,
+      "id": 6
+    },
+    {
+      "title": "11",
+      "members": [
+        "user1"
+      ],
+      "postId": 9,
+      "id": 7
+    },
+    {
+      "title": "11",
+      "members": [
+        "user1"
+      ],
+      "postId": 10,
+      "id": 8
+    },
+    {
+      "title": "11",
+      "members": [
+        "user1"
+      ],
+      "postId": 11,
+      "id": 9
+    },
+    {
+      "title": "UserIDtest1",
+      "members": [
+        "user1"
+      ],
+      "postId": 12,
+      "id": 10
     }
   ]
 }

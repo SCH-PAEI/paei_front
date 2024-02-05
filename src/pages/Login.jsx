@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import Register from "./Register";
+import React, { useState, useEffect, useContext } from "react";
+import { UserContext } from "../App";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
@@ -48,6 +48,10 @@ const Button = styled.button`
   &:hover {
     background-color: #615edf;
   }
+
+  @media (min-width: 768px) {
+    width: 81.5%;
+  }
 `;
 const RegisterText = styled.p`
   color: #fff;
@@ -62,8 +66,7 @@ const Login = () => {
   const [show, setShow] = React.useState(false);
   const [userInfoCompleted, setUserInfoCompleted] = useState(null);
   const [showPersonalInfo, setShowPersonalInfo] = useState(false);
-  const [userID, setUserID] = useState(null);
-
+  const { setUserID } = useContext(UserContext);
   const handleClick = () => setShow(!show);
   const handleRegister = () => {
     navigate("/register"); // '/register' 경로로 이동
