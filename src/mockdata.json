@@ -47,7 +47,7 @@
       "maxMember": 1,
       "tag": "같이배달",
       "location": "11",
-      "currentMembers": 0,
+      "currentMembers": 1,
       "id": 5
     },
     {
@@ -452,6 +452,28 @@
       "currentMembers": 1,
       "userID": null,
       "id": 42
+    },
+    {
+      "title": "ㅁㄴㅇㄻㄴㄹ",
+      "content": "ㅁㄴㅇㄻㅇㄴ",
+      "timestamp": "2024-2-6 6:58:58",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "ㅁㄴㅇㄹ",
+      "currentMembers": 0,
+      "userID": null,
+      "id": 43
+    },
+    {
+      "title": "asdfa",
+      "content": "asdf",
+      "timestamp": "2024-2-6 6:59:38",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "dsafsa",
+      "currentMembers": 0,
+      "userID": 6,
+      "id": 44
     }
   ],
   "members": [
@@ -500,10 +522,10 @@
       "userID": "test6",
       "userPW": "test6",
       "id": 6,
-      "nickname": "11",
-      "department": "11",
-      "studentNumber": "111",
-      "accountNumber": "11"
+      "nickname": "1fesdaf",
+      "department": "11asdf",
+      "studentNumber": "11",
+      "accountNumber": "asdfads"
     },
     {
       "userID": "test11",
@@ -1031,6 +1053,26 @@
       "postId": 42,
       "chatroomId": "4EMDGleitH",
       "id": 40
+    },
+    {
+      "title": "ㅁㄴㅇㄻㄴㄹ",
+      "king": [
+        null
+      ],
+      "commonMember": [],
+      "postId": 43,
+      "chatroomId": "24UI0CCDLZ",
+      "id": 41
+    },
+    {
+      "title": "asdfa",
+      "king": [
+        6
+      ],
+      "commonMember": [],
+      "postId": 44,
+      "chatroomId": "s62nxgKXXt",
+      "id": 42
     }
   ]
 }

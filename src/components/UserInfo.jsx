@@ -24,6 +24,8 @@ const Form = styled.form`
 
 const Label = styled.label`
   margin-top: 10px;
+  font-size: 14px;
+  color: #acacac;
 `;
 
 const Input = styled.input`
@@ -34,17 +36,21 @@ const Input = styled.input`
   padding: 5px;
   border-radius: 5px;
   background-color: #f3f3f3;
+  color: #acacac;
 `;
 
 const SubmitButton = styled.button`
+  position: fixed;
+  bottom: 20px;
   margin-top: 20px;
   padding: 10px;
-  width: 100%;
+  width: 90%;
   color: white;
   background-color: #7176ff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 `;
 
 function UserInfo() {
@@ -100,10 +106,7 @@ function UserInfo() {
     }
   };
 
-  const handleIconClick = () => {
-    // 아이콘 클릭 시 수행할 작업
-    // 예를 들어 페이지를 이전 상태로 돌리거나 모달을 닫는 등의 작업
-  };
+  const handleIconClick = () => {};
 
   return (
     <div>
@@ -116,6 +119,7 @@ function UserInfo() {
           닉네임:
           <Input
             type="text"
+            placeholder="사용할 닉네임을 입력해주세요"
             value={nickname}
             onChange={(e) => setNickname(e.target.value)}
           />
@@ -124,6 +128,7 @@ function UserInfo() {
           학과:
           <Input
             type="text"
+            placeholder="소속 학과를 입력해주세요 "
             value={department}
             onChange={(e) => setDepartment(e.target.value)}
           />
@@ -132,6 +137,7 @@ function UserInfo() {
           학번:
           <Input
             type="text"
+            placeholder="학번을 입력해주세요(예: 20학번)"
             value={studentNumber}
             onChange={(e) => handleNumberInput(e, setStudentNumber)}
           />
@@ -140,11 +146,12 @@ function UserInfo() {
           계좌번호:
           <Input
             type="text"
+            placeholder="계좌번호를 입력해주세요(은행명 계좌번호)"
             value={accountNumber}
-            onChange={(e) => handleNumberInput(e, setAccountNumber)}
+            onChange={(e) => setAccountNumber(e.target.value)}
           />
         </Label>
-        <SubmitButton type="submit">Submit</SubmitButton>
+        <SubmitButton type="submit">입력하기</SubmitButton>
       </Form>
     </div>
   );

@@ -4,7 +4,7 @@ import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
 import { UserContext } from "../App";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import Avatar from "../imgs/taxi.png";
+import Avatar from "../imgs/Group 311.png";
 
 const PageTitle = styled.div`
   display: flex;
@@ -43,6 +43,7 @@ const UserAvatar = styled.img`
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  background-color: #acacac;
 `;
 
 const UserName = styled.h2`
@@ -82,12 +83,16 @@ const PostTitle = styled.h3`
 const PostContent = styled.p`
   font-size: 10px;
 `;
+const Posttime = styled.p`
+  font-size: 10px;
+  color: #acacac;
+`;
 const PostList = styled.ul`
   list-style: none;
   padding: 0;
 `;
 const MoreIcon = styled(FiMoreVertical)`
-  font-size: 20px;
+  font-size: 15px;
   cursor: pointer;
 `;
 
@@ -181,6 +186,7 @@ const MyPage = () => {
               {posts.map((post) => (
                 <PostItem key={post.id}>
                   <div>
+                    <Posttime>{post.timestamp}</Posttime>
                     <PostTitle>{post.title}</PostTitle>
                     <PostContent>{post.content}</PostContent>
                   </div>

@@ -4,7 +4,7 @@ import axios from "axios";
 import styled from "styled-components";
 import { FiX } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-
+import Image from "../imgs/Group 32.png";
 const Title = styled.h1`
   font-size: 20px;
   display: flex;
@@ -35,6 +35,8 @@ const CategoryButton = styled.button`
   background-color: white;
   color: black;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
 `;
 
 const Form = styled.form`
@@ -45,6 +47,8 @@ const Form = styled.form`
 
 const Label = styled.label`
   margin-top: 10px;
+  color: #acacac;
+  font-size: 12px;
 `;
 
 const Input = styled.input`
@@ -68,17 +72,22 @@ const TextArea = styled.textarea`
 `;
 
 const SubmitButton = styled.button`
+  position: fixed;
+  bottom: 20px;
   margin-top: 20px;
   padding: 10px;
-
-  width: 100%;
+  width: 93%;
   color: white;
   background-color: #7176ff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 `;
-
+const ImageWrapper = styled.img`
+  margin-top: 40px;
+  width: 100%;
+`;
 function WritePost() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -217,6 +226,7 @@ function WritePost() {
             onChange={(e) => setLocation(e.target.value)}
           />
         </Label>
+        <ImageWrapper src={Image} alt="User image" />
         <SubmitButton type="submit">파티 생성하기</SubmitButton>
       </Form>
     </div>
