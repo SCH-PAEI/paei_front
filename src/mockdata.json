@@ -17,7 +17,7 @@
       "maxMember": 5,
       "tag": "같이해요",
       "location": "아고라에토스",
-      "currentMembers": 2,
+      "currentMembers": 3,
       "id": 2
     },
     {
@@ -57,7 +57,7 @@
       "maxMember": 1,
       "tag": "같이배달",
       "location": "5",
-      "currentMembers": 0,
+      "currentMembers": 1,
       "id": 6
     },
     {
@@ -77,7 +77,7 @@
       "maxMember": 1,
       "tag": "같이배달",
       "location": "11",
-      "currentMembers": 0,
+      "currentMembers": 1,
       "id": 8
     },
     {
@@ -98,7 +98,7 @@
       "maxMember": 1,
       "tag": "같이해요",
       "location": "111",
-      "currentMembers": 0,
+      "currentMembers": 1,
       "userID": null,
       "id": 10
     },
@@ -122,6 +122,259 @@
       "currentMembers": 0,
       "userID": 20,
       "id": 12
+    },
+    {
+      "title": "UserIDtest2",
+      "content": "UserIDtest2",
+      "timestamp": "2024-2-5 23:40:5",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "2",
+      "currentMembers": 1,
+      "userID": 20,
+      "id": 13
+    },
+    {
+      "title": "11",
+      "content": "11",
+      "timestamp": "2024-2-5 23:41:6",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "11",
+      "currentMembers": 0,
+      "userID": 1,
+      "id": 14
+    },
+    {
+      "title": "신청 제한 테스트 ",
+      "content": "신청 제한 테스트 ",
+      "timestamp": "2024-2-5 23:54:13",
+      "maxMember": 1,
+      "tag": "같이타요",
+      "location": "11",
+      "currentMembers": 3,
+      "userID": 2,
+      "id": 15
+    },
+    {
+      "title": "11",
+      "content": "11",
+      "timestamp": "2024-2-6 0:22:38",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "1",
+      "currentMembers": 1,
+      "userID": 1,
+      "id": 16
+    },
+    {
+      "title": "test11",
+      "content": "11",
+      "timestamp": "2024-2-6 0:25:5",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "1",
+      "currentMembers": 0,
+      "userID": null,
+      "id": 17
+    },
+    {
+      "title": "UserIDtest1",
+      "content": "UserIDtest1",
+      "timestamp": "2024-2-6 0:26:22",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "UserIDtest1UserIDtest1",
+      "currentMembers": 2,
+      "userID": 20,
+      "id": 18
+    },
+    {
+      "title": "UserIDtest1",
+      "content": "UserIDtest1",
+      "timestamp": "2024-2-6 0:26:34",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "UserIDtest1UserIDtest1UserIDtest1",
+      "currentMembers": 1,
+      "userID": 20,
+      "id": 19
+    },
+    {
+      "title": "11",
+      "content": "11",
+      "timestamp": "2024-2-6 0:29:19",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "11",
+      "currentMembers": 0,
+      "userID": null,
+      "id": 20
+    },
+    {
+      "title": "111",
+      "content": "111",
+      "timestamp": "2024-2-6 0:30:14",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "111",
+      "currentMembers": 0,
+      "userID": 2,
+      "id": 21
+    },
+    {
+      "title": "wpqkf",
+      "content": "wpqkf",
+      "timestamp": "2024-2-6 0:32:49",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "wpqkf",
+      "currentMembers": 0,
+      "userID": 25,
+      "id": 22
+    },
+    {
+      "title": "wpqkfwpqkf",
+      "content": "wpqkfwpqkf",
+      "timestamp": "2024-2-6 0:33:7",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "wpqkfwpqkf",
+      "currentMembers": 0,
+      "userID": 25,
+      "id": 23
+    },
+    {
+      "title": "acc1",
+      "content": "acc1",
+      "timestamp": "2024-2-6 0:39:25",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "acc1",
+      "currentMembers": 1,
+      "userID": null,
+      "id": 24
+    },
+    {
+      "title": "ddfsf",
+      "content": "asfasf",
+      "timestamp": "2024-2-6 0:53:33",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "11",
+      "currentMembers": 0,
+      "userID": 2,
+      "id": 25
+    },
+    {
+      "title": "sdafasdf",
+      "content": "sdfsadf",
+      "timestamp": "2024-2-6 0:55:12",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "sdafas",
+      "currentMembers": 0,
+      "userID": 1,
+      "id": 26
+    },
+    {
+      "title": "asdfasf",
+      "content": "asdfsa",
+      "timestamp": "2024-2-6 1:13:7",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "asdfasdf",
+      "currentMembers": 1,
+      "userID": 1,
+      "id": 27
+    },
+    {
+      "title": "asdfdasf",
+      "content": "sadfsdaf",
+      "timestamp": "2024-2-6 1:18:28",
+      "maxMember": 1,
+      "tag": "같이타요",
+      "location": "asfsdaf",
+      "currentMembers": 1,
+      "userID": 1,
+      "id": 28
+    },
+    {
+      "title": "url",
+      "content": "url",
+      "timestamp": "2024-2-6 3:44:44",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "url",
+      "currentMembers": 0,
+      "userID": 1,
+      "id": 29
+    },
+    {
+      "title": "채팅방 연결 ㅔㅌ스트임",
+      "content": "채팅방 연결 ㅔㅌ스트임",
+      "timestamp": "2024-2-6 4:33:55",
+      "maxMember": 1,
+      "tag": "같이타요",
+      "location": "채팅방 연결 ㅔㅌ스트임",
+      "currentMembers": 1,
+      "userID": null,
+      "id": 30
+    },
+    {
+      "title": "1f",
+      "content": "1f",
+      "timestamp": "2024-2-6 4:40:1",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "1",
+      "currentMembers": 1,
+      "userID": null,
+      "id": 31
+    },
+    {
+      "title": "afda",
+      "content": "afd",
+      "timestamp": "2024-2-6 4:40:35",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "asdf",
+      "currentMembers": 4,
+      "userID": 1,
+      "id": 32
+    },
+    {
+      "title": "채팅방 테스트 2",
+      "content": "채팅방 테스트 2",
+      "timestamp": "2024-2-6 4:43:44",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "채팅방 테스트 2",
+      "currentMembers": 3,
+      "userID": 2,
+      "id": 33
+    },
+    {
+      "title": "test 3",
+      "content": "test 3",
+      "timestamp": "2024-2-6 4:45:11",
+      "maxMember": 1,
+      "tag": "같이타요",
+      "location": "test 3",
+      "currentMembers": 4,
+      "userID": 1,
+      "id": 34
+    },
+    {
+      "title": "test1이만듦",
+      "content": "test1이만듦",
+      "timestamp": "2024-2-6 4:50:12",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "test1이만듦",
+      "currentMembers": 2,
+      "userID": 1,
+      "id": 35
     }
   ],
   "members": [
@@ -137,7 +390,11 @@
     {
       "userID": "test2",
       "userPW": "test2",
-      "id": 2
+      "id": 2,
+      "nickname": "11",
+      "department": "11",
+      "studentNumber": "11",
+      "accountNumber": "11"
     },
     {
       "userID": "test3",
@@ -272,6 +529,60 @@
       "department": "UserIDtest1",
       "studentNumber": "11",
       "accountNumber": "11"
+    },
+    {
+      "userID": "t1",
+      "userPW": "t1",
+      "id": 21,
+      "nickname": "t1",
+      "department": "t1",
+      "studentNumber": "1",
+      "accountNumber": "1"
+    },
+    {
+      "accountID": "1111",
+      "userPW": "1111",
+      "id": 22,
+      "nickname": "11",
+      "department": "11",
+      "studentNumber": "11",
+      "accountNumber": "11"
+    },
+    {
+      "userID": "mypage1",
+      "userPW": "mypage1",
+      "id": 23,
+      "nickname": "mypage1",
+      "department": "mypage1",
+      "studentNumber": "1",
+      "accountNumber": "1"
+    },
+    {
+      "userID": "ㄷㅅㄴㅅ",
+      "userPW": "ㄷㅅㄴㅅ",
+      "id": 24,
+      "nickname": "ㄷㅅㄴㅅ",
+      "department": "ㄷㅅㄴㅅ",
+      "studentNumber": "1",
+      "accountNumber": "1"
+    },
+    {
+      "userID": "wpqkf",
+      "userPW": "wpqkf",
+      "id": 25,
+      "nickname": "wpqkf",
+      "department": "wpqkf11",
+      "studentNumber": "11",
+      "accountNumber": "11"
+    },
+    {
+      "accountID": "acc1",
+      "userPW": "acc1",
+      "id": 26,
+      "nickname": "acc1",
+      "department": "acc1",
+      "studentNumber": "1",
+      "accountNumber": "1"
     }
   ],
   "chatrooms": [
@@ -354,6 +665,216 @@
       ],
       "postId": 12,
       "id": 10
+    },
+    {
+      "title": "UserIDtest2",
+      "members": [
+        "user1"
+      ],
+      "postId": 13,
+      "id": 11
+    },
+    {
+      "title": "11",
+      "members": [
+        "user1"
+      ],
+      "postId": 14,
+      "id": 12
+    },
+    {
+      "title": "신청 제한 테스트 ",
+      "members": [
+        "user1"
+      ],
+      "postId": 15,
+      "id": 13
+    },
+    {
+      "title": "11",
+      "members": [
+        "user1"
+      ],
+      "postId": 16,
+      "id": 14
+    },
+    {
+      "title": "test11",
+      "members": [
+        "user1"
+      ],
+      "postId": 17,
+      "id": 15
+    },
+    {
+      "title": "UserIDtest1",
+      "members": [
+        "user1"
+      ],
+      "postId": 18,
+      "id": 16
+    },
+    {
+      "title": "UserIDtest1",
+      "members": [
+        "user1"
+      ],
+      "postId": 19,
+      "id": 17
+    },
+    {
+      "title": "11",
+      "members": [
+        "user1"
+      ],
+      "postId": 20,
+      "id": 18
+    },
+    {
+      "title": "111",
+      "members": [
+        "user1"
+      ],
+      "postId": 21,
+      "id": 19
+    },
+    {
+      "title": "wpqkf",
+      "members": [
+        "user1"
+      ],
+      "postId": 22,
+      "id": 20
+    },
+    {
+      "title": "wpqkfwpqkf",
+      "members": [
+        "user1"
+      ],
+      "postId": 23,
+      "id": 21
+    },
+    {
+      "title": "acc1",
+      "members": [
+        "user1"
+      ],
+      "postId": 24,
+      "id": 22
+    },
+    {
+      "title": "ddfsf",
+      "members": [
+        "user1"
+      ],
+      "postId": 25,
+      "id": 23
+    },
+    {
+      "title": "sdafasdf",
+      "members": [
+        1
+      ],
+      "postId": 26,
+      "id": 24
+    },
+    {
+      "title": "asdfasf",
+      "members": [
+        1
+      ],
+      "postId": 27,
+      "chatroomId": "A!cd0_1707149588454",
+      "id": 25
+    },
+    {
+      "title": "asdfdasf",
+      "members": [
+        1
+      ],
+      "postId": 28,
+      "chatroomId": "L5KYDB62h9",
+      "id": 26
+    },
+    {
+      "title": "url",
+      "king": [
+        1
+      ],
+      "postId": 29,
+      "chatroomId": "D6JjZ37jOp",
+      "id": 27
+    },
+    {
+      "title": "채팅방 연결 ㅔㅌ스트임",
+      "king": [
+        null
+      ],
+      "postId": 30,
+      "chatroomId": "zHZkxfGEqM",
+      "id": 28
+    },
+    {
+      "title": "1f",
+      "king": [
+        null
+      ],
+      "commonMember": [
+        1
+      ],
+      "postId": 31,
+      "chatroomId": "Xin6ta90le",
+      "id": 29
+    },
+    {
+      "title": "afda",
+      "king": [
+        1
+      ],
+      "commonMember": [
+        2,
+        null
+      ],
+      "postId": 32,
+      "chatroomId": "SVHqvh8lHk",
+      "id": 30
+    },
+    {
+      "title": "채팅방 테스트 2",
+      "king": [
+        2
+      ],
+      "commonMember": [
+        1
+      ],
+      "postId": 33,
+      "chatroomId": "KXIaPdfpgc",
+      "id": 31
+    },
+    {
+      "title": "test 3",
+      "king": [
+        1
+      ],
+      "commonMember": [
+        4,
+        null
+      ],
+      "postId": 34,
+      "chatroomId": "bkljQxzV6x",
+      "id": 32
+    },
+    {
+      "title": "test1이만듦",
+      "king": [
+        1
+      ],
+      "commonMember": [
+        2
+      ],
+      "postId": 35,
+      "chatroomId": "M4xrSrL0Z8",
+      "id": 33
     }
   ]
 }

@@ -43,7 +43,7 @@ function Chatting() {
       {chatRooms.map((room) => (
         <ChatRoom key={room.id}>
           <ChatRoomHeader>
-            <Link to={`/chatroom/${room.id}`}>
+            <Link to={`/chatroom/${room.chatroomId}`}>
               <h2>{room.title}</h2>
               <p>{room.description}</p>
             </Link>

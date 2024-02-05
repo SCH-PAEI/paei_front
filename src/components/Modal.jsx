@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import { FiUser } from "react-icons/fi";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../App";
+import taxi from "../imgs/taxi.png";
+
 const ModalBackground = styled.div`
   position: fixed;
   top: 0;
@@ -24,17 +27,19 @@ const ModalContainer = styled.div`
   width: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   overflow-y: auto;
   @media (min-width: 768px) {
     width: 85%;
+    height: 65%;
   }
 `;
 
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
+  margin-top: 10px;
 `;
 
 const Content = styled.p`
@@ -50,28 +55,38 @@ const Member = styled.h3`
 `;
 
 const Button = styled.button`
-  position: absolute;
-  bottom: 20px;
   background-color: #7176ff;
   color: white;
-  align-self: center;
   width: 90%;
   padding: 1em;
   border-radius: 10px;
   border: none;
   outline: none;
 `;
-
+const Image = styled.img`
+  width: 85%;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  @media (min-width: 768px) {
+    width: 85%;
+  }
+`;
 function Modal({ isOpen, close, post }) {
   const navigate = useNavigate();
-
+  const { userID } = useContext(UserContext);
   if (!isOpen) {
     return null;
   }
 
   const applyPost = async () => {
     try {
-      // 해당 게시글 정보를 가져옵니다.
+      if (post.userID === userID) {
+        alert("직접 작성한 게시글에는 신청할 수 없습니다.");
+        return;
+      }
+
       const postResponse = await axios.get(
         `http://localhost:3003/posts/${post.id}`
       );
@@ -91,8 +106,20 @@ function Modal({ isOpen, close, post }) {
         );
 
         if (response.status == 200) {
-          alert("파티 신청 성공");
-          navigate(`/chatting/${post.id}`);
+          // 해당 게시글의 채팅방 정보를 가져옴
+          const chatroomResponse = await axios.get(
+            `http://localhost:3003/chatrooms?postId=${post.id}`
+          );
+
+          if (chatroomResponse.data && chatroomResponse.data.length > 0) {
+            const chatroomId = chatroomResponse.data[0].chatroomId;
+
+            alert("파티 신청 성공");
+            // 채팅방 URL로 이동
+            window.location.href = `http://localhost:3000/chatroom/${chatroomId}`;
+          } else {
+            alert("채팅방 정보를 찾을 수 없음");
+          }
         } else {
           alert("파티 신청 실패");
         }
@@ -109,6 +136,7 @@ function Modal({ isOpen, close, post }) {
     <ModalBackground onClick={close}>
       <ModalContainer onClick={(e) => e.stopPropagation()}>
         <Title>{post.title}</Title>
+        <Image src={taxi} alt="Taxi" /> {/* 이미지 추가 */}
         <Content>{post.content}</Content>
         <Member>
           <FiUser size={20} />

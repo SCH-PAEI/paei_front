@@ -71,30 +71,34 @@ const MyPage = () => {
     fetchPosts();
   }, [userID]);
 
-  if (!user || posts.length === 0) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div>
-      <UserInfoBox>
-        <div>
-          <UserInfoText>닉네임: {user.nickname}</UserInfoText>
-          <UserInfoText>아이디: {user.id}</UserInfoText>
-          <UserInfoText>학번: {user.studentNumber}</UserInfoText>
-          <UserInfoText>학과: {user.department}</UserInfoText>
-        </div>
-        <EditButton onClick={() => navigate(`/userinfo/${userID}`)}>
-          수정
-        </EditButton>
-      </UserInfoBox>
-      <Divider />
-      <MyPostsTitle>내가 쓴 글</MyPostsTitle>
-      <PostList>
-        {posts.map((post) => (
-          <PostItem key={post.id}>{post.title}</PostItem>
-        ))}
-      </PostList>
+      {user && (
+        <>
+          <UserInfoBox>
+            <div>
+              <UserInfoText>닉네임: {user.nickname}</UserInfoText>
+              <UserInfoText>아이디: {user.id}</UserInfoText>
+              <UserInfoText>학번: {user.studentNumber}</UserInfoText>
+              <UserInfoText>학과: {user.department}</UserInfoText>
+            </div>
+            <EditButton onClick={() => navigate(`/userinfo/${userID}`)}>
+              수정
+            </EditButton>
+          </UserInfoBox>
+          <Divider />
+          <MyPostsTitle>내가 쓴 글</MyPostsTitle>
+          {posts.length === 0 ? (
+            <p>게시글이 없습니다.</p>
+          ) : (
+            <PostList>
+              {posts.map((post) => (
+                <PostItem key={post.id}>{post.title}</PostItem>
+              ))}
+            </PostList>
+          )}
+        </>
+      )}
     </div>
   );
 };

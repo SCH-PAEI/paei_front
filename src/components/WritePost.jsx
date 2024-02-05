@@ -127,10 +127,25 @@ function WritePost() {
         setTag("");
         setLocation("");
 
+        const generateRandomString = (length) => {
+          let result = "";
+          const characters =
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+          const charactersLength = characters.length;
+          for (let i = 0; i < length; i++) {
+            result += characters.charAt(
+              Math.floor(Math.random() * charactersLength)
+            );
+          }
+          return result;
+        };
+
         const chatroomData = {
           title: title,
-          members: ["user1"],
+          king: [userID],
+          commonMember: [],
           postId: response.data.id,
+          chatroomId: generateRandomString(10), // 현재 시간을 이용해 고유 아이디 생성
         };
 
         const chatroomResponse = await axios.post(
