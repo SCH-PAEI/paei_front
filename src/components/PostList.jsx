@@ -44,6 +44,8 @@ const UserIcon = styled(FiUser)`
   width: 16px;
   height: auto;
   margin-right: 12px;
+  color: ${(props) =>
+    props.isFilled ? "#7176ff" : "#acacac"}; // 참여자 숫자만큼 아이콘 색상 변경
   &:last-child {
     margin-right: 0;
   }
@@ -105,10 +107,11 @@ function PostList() {
           <Title>{post.title}</Title>
           <Content>{post.content}</Content>
           <div>
-            {post.maxMember > 0 &&
-              Array(Number(post.maxMember))
-                .fill()
-                .map((_, i) => <UserIcon key={i} />)}
+            {Array(Number(post.maxMember))
+              .fill()
+              .map((_, i) => (
+                <UserIcon key={i} isFilled={i < post.currentMembers} />
+              ))}
           </div>
         </Post>
       ))}
