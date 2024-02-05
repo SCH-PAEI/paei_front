@@ -262,7 +262,7 @@
       "maxMember": 1,
       "tag": "같이배달",
       "location": "11",
-      "currentMembers": 0,
+      "currentMembers": 1,
       "userID": 2,
       "id": 25
     },
@@ -306,7 +306,7 @@
       "maxMember": 1,
       "tag": "같이해요",
       "location": "url",
-      "currentMembers": 0,
+      "currentMembers": 1,
       "userID": 1,
       "id": 29
     },
@@ -375,6 +375,83 @@
       "currentMembers": 2,
       "userID": 1,
       "id": 35
+    },
+    {
+      "title": "test1",
+      "content": "test1",
+      "timestamp": "2024-2-6 5:3:54",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "test1",
+      "currentMembers": 0,
+      "userID": null,
+      "id": 36
+    },
+    {
+      "title": "test2",
+      "content": "test2",
+      "timestamp": "2024-2-6 5:4:0",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "test2",
+      "currentMembers": 0,
+      "userID": null,
+      "id": 37
+    },
+    {
+      "title": "test3",
+      "content": "test3",
+      "timestamp": "2024-2-6 5:4:8",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "test3",
+      "currentMembers": 1,
+      "userID": null,
+      "id": 38
+    },
+    {
+      "title": "test1",
+      "content": "test1",
+      "timestamp": "2024-2-6 5:5:32",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "test1",
+      "currentMembers": 1,
+      "userID": 1,
+      "id": 39
+    },
+    {
+      "title": "test1test1",
+      "content": "test1test1",
+      "timestamp": "2024-2-6 5:5:39",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "test1test1",
+      "currentMembers": 1,
+      "userID": 1,
+      "id": 40
+    },
+    {
+      "title": "test1test1test1",
+      "content": "test1test1test1",
+      "timestamp": "2024-2-6 5:5:45",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "test1test1test1",
+      "currentMembers": 1,
+      "userID": 1,
+      "id": 41
+    },
+    {
+      "title": "urltest1",
+      "content": "urltest1",
+      "timestamp": "2024-2-6 5:37:47",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "urltest1",
+      "currentMembers": 1,
+      "userID": null,
+      "id": 42
     }
   ],
   "members": [
@@ -583,6 +660,15 @@
       "department": "acc1",
       "studentNumber": "1",
       "accountNumber": "1"
+    },
+    {
+      "userID": "urltest1",
+      "userPW": "urltest1",
+      "id": 27,
+      "nickname": "urltest1",
+      "department": "urltest1",
+      "studentNumber": "11",
+      "accountNumber": "11"
     }
   ],
   "chatrooms": [
@@ -875,6 +961,76 @@
       "postId": 35,
       "chatroomId": "M4xrSrL0Z8",
       "id": 33
+    },
+    {
+      "title": "test1",
+      "king": [
+        null
+      ],
+      "commonMember": [],
+      "postId": 36,
+      "chatroomId": "WdWpPk91d1",
+      "id": 34
+    },
+    {
+      "title": "test2",
+      "king": [
+        null
+      ],
+      "commonMember": [],
+      "postId": 37,
+      "chatroomId": "t3ERMByCOJ",
+      "id": 35
+    },
+    {
+      "title": "test3",
+      "king": [
+        null
+      ],
+      "commonMember": [],
+      "postId": 38,
+      "chatroomId": "W9z6dkSKGf",
+      "id": 36
+    },
+    {
+      "title": "test1",
+      "king": [
+        1
+      ],
+      "commonMember": [],
+      "postId": 39,
+      "chatroomId": "kJM01CbRk3",
+      "id": 37
+    },
+    {
+      "title": "test1test1",
+      "king": [
+        1
+      ],
+      "commonMember": [],
+      "postId": 40,
+      "chatroomId": "ITR3USYyuS",
+      "id": 38
+    },
+    {
+      "title": "test1test1test1",
+      "king": [
+        1
+      ],
+      "commonMember": [],
+      "postId": 41,
+      "chatroomId": "v8SNrTnupW",
+      "id": 39
+    },
+    {
+      "title": "urltest1",
+      "king": [
+        null
+      ],
+      "commonMember": [],
+      "postId": 42,
+      "chatroomId": "4EMDGleitH",
+      "id": 40
     }
   ]
 }

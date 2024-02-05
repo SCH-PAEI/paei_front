@@ -16,7 +16,7 @@ import Post from "./pages/Post.jsx";
 import Chatting from "./pages/Chatting.jsx";
 import Mypage from "./pages/Mypage.jsx";
 import Register from "./pages/Register.jsx";
-
+import Chatroom from "./components/Chatroom";
 // UserContext 생성
 export const UserContext = createContext(null);
 
@@ -46,6 +46,8 @@ const AppInner = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/club" element={<Club />} />
         <Route path="/post" element={<Post />} />
+        <Route path="/chatroom/:chatroomId" element={<Chatroom />} />{" "}
+        {/* 채팅방에 대한 라우트 추가 */}
         <Route path="/chatting" element={<Chatting />} />
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/userinfo/:userID" element={<UserInfo />} />
@@ -53,6 +55,7 @@ const AppInner = () => {
       {location.pathname !== "/post" &&
         location.pathname !== "/" &&
         location.pathname !== "/register" &&
+        !location.pathname.startsWith("/chatroom") &&
         !location.pathname.startsWith("/userinfo") && <BottomNav />}
     </MainLayout>
   );
