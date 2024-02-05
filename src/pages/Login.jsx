@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import App from "../App";
 import Register from "../components/Resister";
-import UserInfo from "../components/UserInfo";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const LoginContainer = styled.div`
   display: flex;
@@ -67,6 +66,8 @@ const Login = () => {
 
   const handleClick = () => setShow(!show);
 
+  const navigate = useNavigate();
+
   const handleLogin = async () => {
     const response = await fetch("http://localhost:3003/members");
     const members = await response.json();
@@ -85,8 +86,10 @@ const Login = () => {
         user.accountNumber
       ) {
         setUserInfoCompleted(true);
+        navigate("/home"); // 로그인 성공 시 /home으로 이동
       } else {
         setUserInfoCompleted(false);
+        navigate("/userinfo"); // 사용자 정보가 완성되지 않았을 경우 /userinfo로 이동
       }
       setError("");
     } else {
@@ -99,13 +102,6 @@ const Login = () => {
       setShowPersonalInfo(true);
     }
   }, [isLoggedIn, userInfoCompleted]);
-
-  if (showPersonalInfo) {
-    return <UserInfo userID={userID} />;
-  }
-  if (isLoggedIn) {
-    return <App />;
-  }
 
   return (
     <LoginContainer>

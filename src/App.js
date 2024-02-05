@@ -13,11 +13,14 @@ import Mypage from "./pages/Mypage.jsx";
 const App = () => {
   return (
     <BrowserRouter>
-      <AppInner /> {/* AppInner 컴포넌트로 분리 */}
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/*" element={<AppInner />} />{" "}
+        {/* AppInner 컴포넌트를 Routes 내부로 이동 */}
+      </Routes>
     </BrowserRouter>
   );
 };
-
 // AppInner 컴포넌트 추가
 const AppInner = () => {
   const location = useLocation(); // BrowserRouter 안에서 호출
@@ -25,7 +28,6 @@ const AppInner = () => {
   return (
     <MainLayout>
       <Routes>
-        <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/club" element={<Club />} />
         <Route path="/post" element={<Post />} />
@@ -33,9 +35,9 @@ const AppInner = () => {
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/userinfo" element={<UserInfo />} />
       </Routes>
-      {location.pathname !== "/post" && location.pathname !== "/" && (
-        <BottomNav />
-      )}
+      {location.pathname !== "/post" &&
+        location.pathname !== "/" &&
+        location.pathname !== "/userinfo" && <BottomNav />}
     </MainLayout>
   );
 };
