@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Register from "../components/Resister";
+import Register from "./Register";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
@@ -65,10 +65,17 @@ const Login = () => {
   const [userID, setUserID] = useState(null);
 
   const handleClick = () => setShow(!show);
-
+  const handleRegister = () => {
+    navigate("/register"); // '/register' 경로로 이동
+  };
   const navigate = useNavigate();
 
   const handleLogin = async () => {
+    if (ID.trim() === "" || PW.trim() === "") {
+      alert("아이디와 비밀번호를 모두 입력해주세요.");
+      return;
+    }
+
     const response = await fetch("http://localhost:3003/members");
     const members = await response.json();
 
@@ -93,7 +100,7 @@ const Login = () => {
       }
       setError("");
     } else {
-      setError("로그인 실패함");
+      alert("등록되지 않은 사용자입니다. 아이디와 패스워드를 확인해 주세요");
     }
   };
 
@@ -119,8 +126,8 @@ const Login = () => {
         value={PW}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <Button onClick={handleLogin}>Start</Button>
-      <RegisterText onClick={handleClick}>Register</RegisterText>
+      <Button onClick={handleLogin}>시작하기</Button>
+      <RegisterText onClick={handleRegister}>회원가입</RegisterText>
     </LoginContainer>
   );
 };

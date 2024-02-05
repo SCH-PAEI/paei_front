@@ -15,12 +15,13 @@ import Club from "./pages/Clubpage.jsx";
 import Post from "./pages/Post.jsx";
 import Chatting from "./pages/Chatting.jsx";
 import Mypage from "./pages/Mypage.jsx";
-
+import Register from "./pages/Register.jsx";
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/*" element={<AppInner />} />{" "}
         {/* AppInner 컴포넌트를 Routes 내부로 이동 */}
       </Routes>
@@ -43,6 +44,7 @@ const AppInner = () => {
       </Routes>
       {location.pathname !== "/post" &&
         location.pathname !== "/" &&
+        location.pathname !== "/register" &&
         !location.pathname.startsWith("/userinfo") && <BottomNav />}
     </MainLayout>
   );
