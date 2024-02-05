@@ -89,7 +89,7 @@ const Login = () => {
         navigate("/home"); // 로그인 성공 시 /home으로 이동
       } else {
         setUserInfoCompleted(false);
-        navigate("/userinfo"); // 사용자 정보가 완성되지 않았을 경우 /userinfo로 이동
+        navigate(`/userinfo/${user.id}`); // 사용자 정보가 완성되지 않았을 경우 /userinfo로 이동하면서 userID 전달
       }
       setError("");
     } else {

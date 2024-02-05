@@ -1,7 +1,13 @@
 import React from "react";
 import MainLayout from "./MainLayout";
 import BottomNav from "./components/BottomNav";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+  useParams,
+} from "react-router-dom";
 import Login from "./pages/Login";
 import UserInfo from "./components/UserInfo";
 import Home from "./pages/Homepage.jsx";
@@ -33,11 +39,11 @@ const AppInner = () => {
         <Route path="/post" element={<Post />} />
         <Route path="/chatting" element={<Chatting />} />
         <Route path="/mypage" element={<Mypage />} />
-        <Route path="/userinfo" element={<UserInfo />} />
+        <Route path="/userinfo/:userID" element={<UserInfo />} />
       </Routes>
       {location.pathname !== "/post" &&
         location.pathname !== "/" &&
-        location.pathname !== "/userinfo" && <BottomNav />}
+        !location.pathname.startsWith("/userinfo") && <BottomNav />}
     </MainLayout>
   );
 };

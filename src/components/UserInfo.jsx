@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { FiX } from "react-icons/fi";
-
+import { useParams, useNavigate } from "react-router-dom";
 const Title = styled.h1`
   font-size: 20px;
   display: flex;
@@ -47,7 +47,9 @@ const SubmitButton = styled.button`
   cursor: pointer;
 `;
 
-function UserInfo({ userID }) {
+function UserInfo() {
+  const { userID } = useParams();
+  const navigate = useNavigate();
   const [nickname, setNickname] = useState("");
   const [department, setDepartment] = useState("");
   const [studentNumber, setStudentNumber] = useState("");
@@ -88,6 +90,7 @@ function UserInfo({ userID }) {
         setDepartment("");
         setStudentNumber("");
         setAccountNumber("");
+        navigate("/home");
       } else {
         alert("Failed to save user info");
       }

@@ -59,12 +59,20 @@
     {
       "userID": "test5",
       "userPW": "test5",
-      "id": 5
+      "id": 5,
+      "nickname": "11",
+      "department": "11",
+      "studentNumber": "11",
+      "accountNumber": "11"
     },
     {
       "userID": "test6",
       "userPW": "test6",
-      "id": 6
+      "id": 6,
+      "nickname": "11",
+      "department": "11",
+      "studentNumber": "111",
+      "accountNumber": "11"
     },
     {
       "userID": "test11",

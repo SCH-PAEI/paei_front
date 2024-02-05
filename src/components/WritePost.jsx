@@ -87,7 +87,7 @@ function WritePost() {
 
   const navigate = useNavigate();
   const handleIconClick = () => {
-    navigate("/");
+    navigate("/home");
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
