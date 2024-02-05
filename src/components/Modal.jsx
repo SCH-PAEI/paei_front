@@ -94,12 +94,17 @@ function Modal({ isOpen, close, post }) {
       if (postResponse.data) {
         const post = postResponse.data;
 
+        // 신청 가능한 정원을 초과하면 신청을 받지 않음
+        if (post.currentMembers >= post.maxMember) {
+          alert("신청 가능한 정원을 초과하였습니다.");
+          return;
+        }
+
         // 신청한 사용자를 게시글에 추가
         const updatedPost = {
           ...post,
           currentMembers: post.currentMembers ? post.currentMembers + 1 : 1,
         };
-
         const response = await axios.put(
           `http://localhost:3003/posts/${post.id}`,
           updatedPost
