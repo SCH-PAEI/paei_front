@@ -79,7 +79,9 @@ const Login = () => {
       return;
     }
 
-    const response = await fetch("http://localhost:3003/members");
+    const response = await fetch(
+      "https://rightful-marbled-glass.glitch.me/members"
+    );
     const members = await response.json();
 
     const user = members.find(

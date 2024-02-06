@@ -113,7 +113,9 @@ function Chatroom() {
       try {
         // chatrooms 전체 데이터를 가져옵니다.
         const chatroomsResponse = await axios.get(
-          `http://localhost:3003/chatrooms`
+          `https://rightful-marbled-glass.glitch.me
+
+          /chatrooms`
         );
         const chatrooms = chatroomsResponse.data;
         console.log("chatrooms:", chatrooms); // chatrooms 데이터 확인
@@ -131,7 +133,9 @@ function Chatroom() {
 
         // 찾은 데이터에서 postId를 가져와 해당하는 게시물을 가져옵니다.
         const postResponse = await axios.get(
-          `http://localhost:3003/posts/${matchedChatroom.postId}`
+          `https://rightful-marbled-glass.glitch.me
+
+          /posts/${matchedChatroom.postId}`
         );
         setPost(postResponse.data);
         console.log("post:", postResponse.data); // post 데이터 확인

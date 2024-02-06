@@ -88,7 +88,9 @@ function Modal({ isOpen, close, post }) {
       }
 
       const postResponse = await axios.get(
-        `http://localhost:3003/posts/${post.id}`
+        `https://rightful-marbled-glass.glitch.me
+
+        /posts/${post.id}`
       );
 
       if (postResponse.data) {
@@ -106,14 +108,18 @@ function Modal({ isOpen, close, post }) {
           currentMembers: post.currentMembers ? post.currentMembers + 1 : 1,
         };
         const response = await axios.put(
-          `http://localhost:3003/posts/${post.id}`,
+          `https://rightful-marbled-glass.glitch.me
+
+          /posts/${post.id}`,
           updatedPost
         );
 
         if (response.status == 200) {
           // 해당 게시글의 채팅방 정보를 가져옴
           const chatroomResponse = await axios.get(
-            `http://localhost:3003/chatrooms?postId=${post.id}`
+            `https://rightful-marbled-glass.glitch.me
+
+            /chatrooms?postId=${post.id}`
           );
 
           if (chatroomResponse.data && chatroomResponse.data.length > 0) {
@@ -121,7 +127,7 @@ function Modal({ isOpen, close, post }) {
 
             alert("파티 신청 성공");
             // 채팅방 URL로 이동
-            window.location.href = `http://localhost:3000/chatroom/${chatroomId}`;
+            navigate(`/chatroom/${chatroomId}`);
           } else {
             alert("채팅방 정보를 찾을 수 없음");
           }

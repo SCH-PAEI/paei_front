@@ -21,6 +21,50 @@
       "currentMembers": 1,
       "userID": 1,
       "id": 2
+    },
+    {
+      "title": "테스트3",
+      "content": "테스트3",
+      "timestamp": "2024-2-6 9:33:46",
+      "maxMember": 4,
+      "tag": "같이해요",
+      "location": "테스트3",
+      "currentMembers": 4,
+      "userID": 1,
+      "id": 3
+    },
+    {
+      "title": "테스트4",
+      "content": "테스트4",
+      "timestamp": "2024-2-6 9:39:18",
+      "maxMember": 10,
+      "tag": "같이배달",
+      "location": "테스트4",
+      "currentMembers": 4,
+      "userID": null,
+      "id": 4
+    },
+    {
+      "title": "테스트5",
+      "content": "테스트5",
+      "timestamp": "2024-2-6 9:40:1",
+      "maxMember": 8,
+      "tag": "같이배달",
+      "location": "테스트5",
+      "currentMembers": 7,
+      "userID": 2,
+      "id": 5
+    },
+    {
+      "title": "user3",
+      "content": "user3",
+      "timestamp": "2024-2-6 9:43:8",
+      "maxMember": 1,
+      "tag": "같이배달",
+      "location": "user3",
+      "currentMembers": 1,
+      "userID": 3,
+      "id": 6
     }
   ],
   "members": [
@@ -41,6 +85,15 @@
       "department": "user2",
       "studentNumber": "11",
       "accountNumber": "user2"
+    },
+    {
+      "userID": "user3",
+      "userPW": "user3",
+      "id": 3,
+      "nickname": "user3",
+      "department": "user3",
+      "studentNumber": "11",
+      "accountNumber": "user3"
     }
   ],
   "chatrooms": [
@@ -63,6 +116,83 @@
       "postId": 2,
       "chatroomId": "S76BdlFIHx",
       "id": 2
+    },
+    {
+      "title": "테스트3",
+      "king": [
+        1
+      ],
+      "commonMember": [],
+      "postId": 3,
+      "chatroomId": "DMKLcTezzS",
+      "id": 3
+    },
+    {
+      "title": "테스트4",
+      "king": [
+        null
+      ],
+      "commonMember": [],
+      "postId": 4,
+      "chatroomId": "14dQzdayJ1",
+      "id": 4
+    },
+    {
+      "title": "테스트5",
+      "king": [
+        2
+      ],
+      "commonMember": [],
+      "postId": 5,
+      "chatroomId": "qvldXHz2lq",
+      "id": 5
+    },
+    {
+      "title": "user3",
+      "king": [
+        3
+      ],
+      "commonMember": [],
+      "postId": 6,
+      "chatroomId": "idRkaZFDDh",
+      "id": 6
+    }
+  ],
+  "userChatrooms": [
+    {
+      "userId": 2,
+      "chatroomId": "DMKLcTezzS",
+      "id": 1
+    },
+    {
+      "userId": null,
+      "chatroomId": "DMKLcTezzS",
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "chatroomId": "14dQzdayJ1",
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "chatroomId": "qvldXHz2lq",
+      "id": 4
+    },
+    {
+      "userId": 3,
+      "chatroomId": "14dQzdayJ1",
+      "id": 5
+    },
+    {
+      "userId": null,
+      "chatroomId": "qvldXHz2lq",
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "chatroomId": "qvldXHz2lq",
+      "id": 7
     }
   ]
 }

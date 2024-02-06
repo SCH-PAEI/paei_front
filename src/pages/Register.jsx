@@ -64,16 +64,19 @@ function Register() {
       return;
     }
     try {
-      const response = await fetch("http://localhost:3003/members", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          userID: id,
-          userPW: password,
-        }),
-      });
+      const response = await fetch(
+        "https://rightful-marbled-glass.glitch.me/members",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            userID: id,
+            userPW: password,
+          }),
+        }
+      );
       const data = await response.json();
       console.log(data);
       setModalIsOpen(true);

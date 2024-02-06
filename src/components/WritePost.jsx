@@ -124,7 +124,9 @@ function WritePost() {
 
     try {
       const response = await axios.post(
-        `http://localhost:3003/posts?userID=${userID}`, // userID를 포함한 주소로 요청
+        `https://rightful-marbled-glass.glitch.me
+
+        /posts?userID=${userID}`, // userID를 포함한 주소로 요청
         postData
       );
 
@@ -158,7 +160,7 @@ function WritePost() {
         };
 
         const chatroomResponse = await axios.post(
-          "http://localhost:3003/chatrooms",
+          "https://rightful-marbled-glass.glitch.me/chatrooms",
           chatroomData
         );
       } else {

@@ -77,7 +77,7 @@ function PostList() {
   const [selectedTag, setSelectedTag] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3003/posts")
+    fetch("https://rightful-marbled-glass.glitch.me/posts")
       .then((response) => response.json())
       .then((data) => setPosts(data.reverse()));
   }, []);
