@@ -1,7 +1,6 @@
 json-server를 사용하여 구현, 서버 실행 명령어
 `npx json-server src/mockdata.json --port 3003`
 
-![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/9601ec8a-61b0-4f8c-956c-56bd9ad7bf42)
 # PAEI 프론트
 
 1. 로그인/회원가입
