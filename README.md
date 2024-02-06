@@ -6,7 +6,7 @@ json-server를 사용하여 구현, 서버 실행 명령어
 1. 로그인/회원가입
 
    User 구분을 위해서 임의로 회원가입, 로그인 기능을 구현. 차후 웹메일 인증 로그인, google/kakao API를 활용한 SNS 로그인 구현 예정
-![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/f37d8e99-62a1-4d72-928b-f388982ebc11)
+   ![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/f37d8e99-62a1-4d72-928b-f388982ebc11)
 
 2. 홈화면
 
@@ -14,14 +14,14 @@ json-server를 사용하여 구현, 서버 실행 명령어
    - 검색 및 카테고리 분류
    - 입장 가능 인원 및 입장한 인원을 아이콘으로 가시화
    - 게시물 클릭 시 등장하는 모달창에서 신청 버튼 클릭 시 채팅방으로 이동
-  ![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/e5219c38-4d41-4c33-86ef-fc639ff3345a)
+   ![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/e5219c38-4d41-4c33-86ef-fc639ff3345a)
 
-![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/42d36701-9050-4d7f-be04-7b90a4b32aac)
+   ![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/42d36701-9050-4d7f-be04-7b90a4b32aac)
 
 3. 채팅방
 
    실시간 채팅 기능 추가 예정
-![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/32326cd0-4ddf-4c05-a987-f78c0d2a3cba)
+   ![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/32326cd0-4ddf-4c05-a987-f78c0d2a3cba)
 
 4. 파티톡
 
