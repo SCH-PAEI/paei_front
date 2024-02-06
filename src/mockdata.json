@@ -1,76 +1,68 @@
 {
   "posts": [
     {
-      "title": "같이 엽떡 시킬분~",
-      "content": "엽떡 배달비 n빵 하실 분 구해요!",
-      "timestamp": "2024-2-3 6:8:36",
-      "maxMember": 3,
+      "title": "테스트1",
+      "content": "테스트1",
+      "timestamp": "2024-2-6 9:19:48",
+      "maxMember": 1,
       "tag": "같이배달",
-      "location": "향설1관",
-      "currentMembers": 5,
+      "location": "테스트1",
+      "currentMembers": 1,
+      "userID": 1,
       "id": 1
+    },
+    {
+      "title": "테스트2",
+      "content": "테스트2",
+      "timestamp": "2024-2-6 9:21:31",
+      "maxMember": 1,
+      "tag": "같이해요",
+      "location": "테스트2",
+      "currentMembers": 1,
+      "userID": 1,
+      "id": 2
     }
   ],
   "members": [
     {
-      "id": "test1",
-      "pw": "test"
+      "userID": "user1",
+      "userPW": "user1",
+      "id": 1,
+      "nickname": "황다경",
+      "department": "컴소공",
+      "studentNumber": "20204023",
+      "accountNumber": "111111111"
     },
     {
-      "userID": "test1",
-      "userPW": "test1",
-      "id": "Su8KeEV"
-    },
-    {
-      "userID": "test2",
-      "userPW": "test1",
-      "id": "1vhbQEy"
-    },
-    {
-      "userID": "",
-      "userPW": "",
-      "id": "q9G1hmW"
-    },
-    {
-      "userID": "",
-      "userPW": "",
-      "id": "tCZWAe7"
-    },
-    {
-      "userID": "",
-      "userPW": "",
-      "id": "498yeC1"
-    },
-    {
-      "userID": "test3",
-      "userPW": "test3",
-      "id": "diI5sf3"
-    },
-    {
-      "userID": "test4",
-      "userPW": "test3",
-      "id": "AcZyHa9"
-    },
-    {
-      "userID": "test5",
-      "userPW": "test5",
-      "id": "4r8iUkG"
-    },
-    {
-      "userID": "tq",
-      "userPW": "tq",
-      "id": "PGiWlkA"
+      "userID": "user2",
+      "userPW": "user2",
+      "id": 2,
+      "nickname": "user2",
+      "department": "user2",
+      "studentNumber": "11",
+      "accountNumber": "user2"
     }
   ],
   "chatrooms": [
     {
-      "title": "같이 엽떡 시킬분~",
-      "members": [
-        "user1"
+      "title": "테스트1",
+      "king": [
+        1
       ],
+      "commonMember": [],
       "postId": 1,
-      "id": 1,
-      "currentMembers": 2
+      "chatroomId": "HpRUy0J2ve",
+      "id": 1
+    },
+    {
+      "title": "테스트2",
+      "king": [
+        1
+      ],
+      "commonMember": [],
+      "postId": 2,
+      "chatroomId": "S76BdlFIHx",
+      "id": 2
     }
   ]
 }

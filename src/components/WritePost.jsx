@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { UserContext } from "../App";
 import axios from "axios";
 import styled from "styled-components";
 import { FiX } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-
+import Image from "../imgs/Group 32.png";
 const Title = styled.h1`
   font-size: 20px;
   display: flex;
@@ -34,16 +35,20 @@ const CategoryButton = styled.button`
   background-color: white;
   color: black;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding-right: 10px;
 `;
 
 const Label = styled.label`
   margin-top: 10px;
+  color: #acacac;
+  font-size: 12px;
 `;
 
 const Input = styled.input`
@@ -67,26 +72,32 @@ const TextArea = styled.textarea`
 `;
 
 const SubmitButton = styled.button`
+  position: fixed;
+  bottom: 20px;
   margin-top: 20px;
   padding: 10px;
-  width: 100%;
+  width: 93%;
   color: white;
   background-color: #7176ff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 `;
-
+const ImageWrapper = styled.img`
+  margin-top: 40px;
+  width: 100%;
+`;
 function WritePost() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [maxMember, setMaxMember] = useState(1);
   const [tag, setTag] = useState("");
   const [location, setLocation] = useState("");
-
+  const { userID } = useContext(UserContext);
   const navigate = useNavigate();
   const handleIconClick = () => {
-    navigate("/");
+    navigate("/home");
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -108,11 +119,12 @@ function WritePost() {
       tag: tag,
       location: location,
       currentMembers: 0,
+      userID: userID,
     };
 
     try {
       const response = await axios.post(
-        "http://localhost:3003/posts",
+        `http://localhost:3003/posts?userID=${userID}`, // userID를 포함한 주소로 요청
         postData
       );
 
@@ -124,10 +136,25 @@ function WritePost() {
         setTag("");
         setLocation("");
 
+        const generateRandomString = (length) => {
+          let result = "";
+          const characters =
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+          const charactersLength = characters.length;
+          for (let i = 0; i < length; i++) {
+            result += characters.charAt(
+              Math.floor(Math.random() * charactersLength)
+            );
+          }
+          return result;
+        };
+
         const chatroomData = {
           title: title,
-          members: ["user1"],
+          king: [userID],
+          commonMember: [],
           postId: response.data.id,
+          chatroomId: generateRandomString(10), // 현재 시간을 이용해 고유 아이디 생성
         };
 
         const chatroomResponse = await axios.post(
@@ -199,6 +226,7 @@ function WritePost() {
             onChange={(e) => setLocation(e.target.value)}
           />
         </Label>
+        <ImageWrapper src={Image} alt="User image" />
         <SubmitButton type="submit">파티 생성하기</SubmitButton>
       </Form>
     </div>

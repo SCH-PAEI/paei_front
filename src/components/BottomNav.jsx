@@ -49,7 +49,7 @@ const BottomNav = () => {
   return (
     <NavBar>
       <NavItem>
-        <Link to="/">
+        <Link to="/home">
           <RiHome3Line size="25" color="black" />
         </Link>
       </NavItem>

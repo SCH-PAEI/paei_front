@@ -21,6 +21,34 @@ const Post = styled.div`
 const PostHeader = styled.div`
   display: flex;
   align-items: center;
+  color: #acacac;
+  font-size: 12px;
+
+  span:not(:last-child)::after {
+    content: "|";
+    margin: 0 5px; // 장소와 시간 사이의 공백 추가
+  }
+`;
+
+const Content = styled.p`
+  font-size: 10px; // 내용 글자 크기를 10px로 변경
+`;
+
+const Title = styled.h2`
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+`;
+
+const UserIcon = styled(FiUser)`
+  width: 16px;
+  height: auto;
+  margin-right: 12px;
+  color: ${(props) =>
+    props.isFilled ? "#7176ff" : "#acacac"}; // 참여자 숫자만큼 아이콘 색상 변경
+  &:last-child {
+    margin-right: 0;
+  }
 `;
 
 function timeDifference(current, previous) {
@@ -51,7 +79,7 @@ function PostList() {
   useEffect(() => {
     fetch("http://localhost:3003/posts")
       .then((response) => response.json())
-      .then((data) => setPosts(data));
+      .then((data) => setPosts(data.reverse()));
   }, []);
 
   const openModal = (post) => {
@@ -74,16 +102,16 @@ function PostList() {
         <Post key={post.id} onClick={() => openModal(post)}>
           <PostHeader>
             <span>{post.location}</span>
-            <span> | </span>
             <span>{timeDifference(new Date(), new Date(post.timestamp))}</span>
           </PostHeader>
-          <h2>{post.title}</h2>
-          <p>{post.content}</p>
+          <Title>{post.title}</Title>
+          <Content>{post.content}</Content>
           <div>
-            {post.maxMember > 0 &&
-              Array(Number(post.maxMember))
-                .fill()
-                .map((_, i) => <FiUser key={i} />)}
+            {Array(Number(post.maxMember))
+              .fill()
+              .map((_, i) => (
+                <UserIcon key={i} isFilled={i < post.currentMembers} />
+              ))}
           </div>
         </Post>
       ))}
