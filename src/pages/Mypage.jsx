@@ -133,7 +133,7 @@ const MyPage = () => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const response = await fetch(`https://rightful-marbled-glass.glitch.me
+      const response = await fetch(`http://localhost:3003
 
       /members/${userID}`);
       const userInfo = await response.json();
@@ -142,7 +142,7 @@ const MyPage = () => {
 
     const fetchPosts = async () => {
       const response = await fetch(
-        `https://rightful-marbled-glass.glitch.me
+        `http://localhost:3003
 
         /posts?userID=${userID}`
       );

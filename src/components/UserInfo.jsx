@@ -86,7 +86,7 @@ function UserInfo() {
 
     try {
       const response = await axios.patch(
-        `https://rightful-marbled-glass.glitch.me
+        `http://localhost:3003
 
         /members/${userID}`,
         userInfo

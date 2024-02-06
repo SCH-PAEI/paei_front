@@ -113,8 +113,7 @@ function Chatroom() {
       try {
         // chatrooms 전체 데이터를 가져옵니다.
         const chatroomsResponse = await axios.get(
-          `https://rightful-marbled-glass.glitch.me
-
+          `http://localhost:3003
           /chatrooms`
         );
         const chatrooms = chatroomsResponse.data;
@@ -133,7 +132,7 @@ function Chatroom() {
 
         // 찾은 데이터에서 postId를 가져와 해당하는 게시물을 가져옵니다.
         const postResponse = await axios.get(
-          `https://rightful-marbled-glass.glitch.me
+          `http://localhost:3003
 
           /posts/${matchedChatroom.postId}`
         );

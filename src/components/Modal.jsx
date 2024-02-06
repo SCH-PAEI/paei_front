@@ -88,7 +88,7 @@ function Modal({ isOpen, close, post }) {
       }
 
       const postResponse = await axios.get(
-        `https://rightful-marbled-glass.glitch.me
+        `http://localhost:3003
 
         /posts/${post.id}`
       );
@@ -108,7 +108,7 @@ function Modal({ isOpen, close, post }) {
           currentMembers: post.currentMembers ? post.currentMembers + 1 : 1,
         };
         const response = await axios.put(
-          `https://rightful-marbled-glass.glitch.me
+          `http://localhost:3003
 
           /posts/${post.id}`,
           updatedPost
@@ -117,7 +117,7 @@ function Modal({ isOpen, close, post }) {
         if (response.status == 200) {
           // 해당 게시글의 채팅방 정보를 가져옴
           const chatroomResponse = await axios.get(
-            `https://rightful-marbled-glass.glitch.me
+            `http://localhost:3003
 
             /chatrooms?postId=${post.id}`
           );

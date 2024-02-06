@@ -40,9 +40,7 @@ function Chatting() {
   useEffect(() => {
     const fetchChatRooms = async () => {
       try {
-        const response = await axios.get(
-          "https://rightful-marbled-glass.glitch.me/chatrooms"
-        );
+        const response = await axios.get("http://localhost:3003/chatrooms");
         setChatRooms(response.data);
       } catch (error) {
         console.error("Error fetching chat rooms", error);
