@@ -19,7 +19,7 @@ json-server를 사용하여 구현, 서버 실행 명령어
    ![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/e5219c38-4d41-4c33-86ef-fc639ff3345a)
    
 
-   ![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/42d36701-9050-4d7f-be04-7b90a4b32aac)
+                                                                                                              ![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/42d36701-9050-4d7f-be04-7b90a4b32aac)
 
 ## 3. 채팅방
 
