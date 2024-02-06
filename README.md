@@ -44,7 +44,6 @@ json-server를 사용하여 구현, 서버 실행 명령어
    ![image](https://github.com/SCH-PAEI/paei_front/assets/100592495/4b94d9d5-b4a6-4dd8-a6b7-6f12e11af28e)
 
 
-
 ## 6. 글쓰기
 
    게시물 업로드
