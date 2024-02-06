@@ -96,6 +96,7 @@ const Login = () => {
         user.accountNumber
       ) {
         setUserInfoCompleted(true);
+
         navigate("/home"); // 로그인 성공 시 /home으로 이동
       } else {
         setUserInfoCompleted(false);

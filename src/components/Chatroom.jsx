@@ -1,7 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import styled from "styled-components";
 import { UserContext } from "../App";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+
+import axios from "axios";
+
 import {
   AiOutlinePlus,
   AiOutlineArrowLeft,
@@ -101,7 +104,44 @@ function Chatroom() {
   const { userID } = useContext(UserContext);
   const [newMessage, setNewMessage] = useState("");
   const [messages, setMessages] = useState([]);
+  const [post, setPost] = useState(null);
+  const { chatroomId } = useParams();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchPost = async () => {
+      try {
+        // chatrooms 전체 데이터를 가져옵니다.
+        const chatroomsResponse = await axios.get(
+          `http://localhost:3003/chatrooms`
+        );
+        const chatrooms = chatroomsResponse.data;
+        console.log("chatrooms:", chatrooms); // chatrooms 데이터 확인
+
+        // chatrooms에서 chatroomId가 일치하는 데이터를 찾습니다.
+        const matchedChatroom = chatrooms.find(
+          (room) => room.chatroomId === chatroomId
+        );
+        console.log("chatroom:", matchedChatroom); // chatroom 데이터 확인
+
+        if (!matchedChatroom) {
+          console.error("chatroom not found");
+          return;
+        }
+
+        // 찾은 데이터에서 postId를 가져와 해당하는 게시물을 가져옵니다.
+        const postResponse = await axios.get(
+          `http://localhost:3003/posts/${matchedChatroom.postId}`
+        );
+        setPost(postResponse.data);
+        console.log("post:", postResponse.data); // post 데이터 확인
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchPost();
+  }, [chatroomId]);
 
   const handleExit = () => {
     navigate("/chatting");
@@ -117,11 +157,12 @@ function Chatroom() {
       <ExitButton onClick={handleExit} />
       <MemberInfo>
         <UserIcon />
-        <span>4</span>
+        <span>{post ? post.currentMembers + 1 : "Loading..."}</span>{" "}
+        {/* post의 currentMembers를 사용하여 참여중인 회원 수를 표시합니다. */}
       </MemberInfo>
       <PostInfo>
-        <Title>제목</Title>
-        <Content>내용</Content>
+        <Title>{post ? post.title : "Loading..."}</Title>
+        <Content>{post ? post.content : "Loading..."}</Content>
       </PostInfo>
       <MessageList>
         {messages.map((message, index) => (
